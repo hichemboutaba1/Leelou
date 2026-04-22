@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200;300&display=swap');
+    </style>
+    <path id="topArc" d="M 62,250 A 188,188 0 0,1 438,250"/>
+    <clipPath id="circleClip">
+      <circle cx="250" cy="250" r="238"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fond blanc circulaire -->
+  <circle cx="250" cy="250" r="245" fill="#faf7f5"/>
+  <circle cx="250" cy="250" r="240" fill="white"/>
+  <circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+
+  <!-- ===== FLEURS ET FEUILLES (bas du logo) ===== -->
+  <g clip-path="url(#circleClip)">
+
+    <!-- Feuilles vertes / teal gauche -->
+    <ellipse cx="90" cy="365" rx="30" ry="10" fill="#7ec8b0" opacity="0.55" transform="rotate(40,90,365)"/>
+    <ellipse cx="108" cy="385" rx="26" ry="9" fill="#90d0b8" opacity="0.50" transform="rotate(58,108,385)"/>
+    <ellipse cx="75" cy="382" rx="24" ry="8" fill="#6dbaa5" opacity="0.52" transform="rotate(22,75,382)"/>
+    <ellipse cx="120" cy="370" rx="22" ry="8" fill="#85c8b2" opacity="0.48" transform="rotate(72,120,370)"/>
+
+    <!-- Feuilles vertes / teal droite -->
+    <ellipse cx="408" cy="362" rx="28" ry="9" fill="#7ec8b0" opacity="0.55" transform="rotate(-42,408,362)"/>
+    <ellipse cx="392" cy="382" rx="24" ry="8" fill="#90d0b8" opacity="0.50" transform="rotate(-60,392,382)"/>
+    <ellipse cx="420" cy="378" rx="22" ry="8" fill="#6dbaa5" opacity="0.52" transform="rotate(-25,420,378)"/>
+
+    <!-- Grande pivoine rose gauche -->
+    <g opacity="0.80">
+      <ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/>
+      <ellipse cx="155" cy="373" rx="40" ry="32" fill="#f4bfce" transform="rotate(12,155,373)"/>
+      <ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/>
+      <ellipse cx="156" cy="376" rx="22" ry="17" fill="#fae3ea" transform="rotate(22,156,376)"/>
+      <ellipse cx="156" cy="377" rx="13" ry="10" fill="#fceef2" transform="rotate(-10,156,377)"/>
+      <circle cx="156" cy="377" r="5" fill="#eba8c0" opacity="0.6"/>
+    </g>
+
+    <!-- Pivoine rose centre -->
+    <g opacity="0.75">
+      <ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/>
+      <ellipse cx="252" cy="388" rx="36" ry="29" fill="#f2b8ca" transform="rotate(-22,252,388)"/>
+      <ellipse cx="254" cy="389" rx="27" ry="22" fill="#f6cdd8" transform="rotate(14,254,389)"/>
+      <ellipse cx="253" cy="390" rx="17" ry="13" fill="#f9dfe7" transform="rotate(-5,253,390)"/>
+      <circle cx="253" cy="390" r="6" fill="#e898b5" opacity="0.65"/>
+    </g>
+
+    <!-- Pivoine rose droite -->
+    <g opacity="0.72">
+      <ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/>
+      <ellipse cx="345" cy="376" rx="34" ry="27" fill="#f4c2d0" transform="rotate(-12,345,376)"/>
+      <ellipse cx="347" cy="377" rx="25" ry="20" fill="#f7d3dc" transform="rotate(7,347,377)"/>
+      <ellipse cx="346" cy="378" rx="15" ry="12" fill="#fae3ea" transform="rotate(-18,346,378)"/>
+      <circle cx="346" cy="378" r="5" fill="#eca5be" opacity="0.6"/>
+    </g>
+
+    <!-- Petits boutons roses -->
+    <ellipse cx="198" cy="405" rx="14" ry="11" fill="#f3b2c6" opacity="0.62"/>
+    <ellipse cx="303" cy="402" rx="12" ry="9" fill="#f4b8c8" opacity="0.58"/>
+    <ellipse cx="130" cy="400" rx="10" ry="8" fill="#f0a8be" opacity="0.50"/>
+    <ellipse cx="370" cy="398" rx="11" ry="8" fill="#f2aec3" opacity="0.52"/>
+
+    <!-- Petites feuilles accent -->
+    <ellipse cx="178" cy="412" rx="16" ry="6" fill="#8ecab5" opacity="0.45" transform="rotate(-30,178,412)"/>
+    <ellipse cx="320" cy="410" rx="14" ry="5" fill="#7ec0aa" opacity="0.42" transform="rotate(28,320,410)"/>
+  </g>
+
+  <!-- ===== TEXTE COURBE "BISTROT & GOURMANDISES" ===== -->
+  <text
+    font-family="'Josefin Sans', 'Gill Sans MT', 'Century Gothic', Futura, sans-serif"
+    font-size="17"
+    letter-spacing="4"
+    fill="#3a2215"
+    font-weight="300">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath>
+  </text>
+
+  <!-- ===== FIORITURES DÉCORATIVES autour de "leelou" ===== -->
+  <!-- Fioriture gauche -->
+  <path d="M 108,258 C 115,242 130,240 140,253 C 150,266 142,278 136,274"
+        fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M 108,258 C 101,270 107,282 116,277"
+        fill="none" stroke="#5c3a28" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Fioriture droite -->
+  <path d="M 392,258 C 385,242 370,240 360,253 C 350,266 358,278 364,274"
+        fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M 392,258 C 399,270 393,282 384,277"
+        fill="none" stroke="#5c3a28" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- ===== TEXTE "leelou" ===== -->
+  <text
+    x="250"
+    y="282"
+    font-family="'Dancing Script', 'Brush Script MT', 'Segoe Script', cursive"
+    font-size="92"
+    fill="#2a1208"
+    text-anchor="middle"
+    font-weight="700">leelou</text>
+
+</svg>
