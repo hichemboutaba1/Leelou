@@ -30,7 +30,7 @@
     "@type": "Restaurant",
     "name": "Leelou Bistrot & Gourmandises",
     "image": "images/interieur.jpg",
-    "url": "",
+    "url": "https://leeloubistrot.com",
     "telephone": "+33499026993",
     "email": "sete@leeloubistrot.com",
     "address": {
@@ -82,7 +82,7 @@
           <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
         </svg>
       </a>
-      <button class="nav-toggle" aria-label="Menu">
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <div id="status-badge" class="status-badge"></div>
@@ -117,7 +117,7 @@
           <path d="M 392,258 C 385,242 370,240 360,253 C 350,266 358,278 364,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
           <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
         </svg>
-      <p class="hero-tagline">Bistrot & Gourmandises · Sète</p>
+      <h1 class="hero-tagline">Leelou — Bistrot & Gourmandises · Sète</h1>
       <p class="hero-sub">Cuisine de saison, pâtisseries maison, saveurs méditerranéennes</p>
       <div class="hero-actions">
         <a href="tel:0499026993" class="btn btn-primary">Nous appeler</a>
@@ -458,8 +458,7 @@
           </div>
         </div>
         <div class="contact-right">
-          <!-- Formspree : créer un compte sur formspree.io et remplacer VOTRE_ID -->
-          <form class="contact-form" id="contactForm" action="https://formspree.io/f/VOTRE_ID" method="POST">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/sete@leeloubistrot.com" method="POST">
             <h3>Envoyer un message</h3>
             <div class="form-group">
               <label for="nom">Nom</label>
