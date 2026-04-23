@@ -518,6 +518,18 @@ section { padding: 5rem 0; }
   .menu-grid { grid-template-columns: 1fr; }
 }
 
+/* ---------- IMAGES PLACEHOLDER ---------- */
+img {
+  background: var(--beige);
+}
+.galerie-item img:not([src]),
+.galerie-item img[src=""],
+.apropos-image img:not([src]),
+.apropos-image img[src=""] {
+  min-height: 260px;
+  background: linear-gradient(135deg, var(--beige) 0%, var(--beige-dark) 100%);
+}
+
 /* ---------- ANIMATIONS ---------- */
 .fade-in {
   opacity: 0;
