@@ -185,3 +185,25 @@ document.querySelectorAll('.galerie-item img').forEach(img => {
     document.body.appendChild(overlay);
   });
 });
+
+// ---------- DRAG-SCROLL GALERIE ATELIER ----------
+(function() {
+  const strip = document.getElementById('galerieStripAt');
+  if (!strip) return;
+  let isDown = false, startX, scrollLeft;
+
+  strip.addEventListener('mousedown', e => {
+    isDown = true;
+    strip.classList.add('dragging');
+    startX = e.pageX - strip.offsetLeft;
+    scrollLeft = strip.scrollLeft;
+  });
+  strip.addEventListener('mouseleave', () => { isDown = false; strip.classList.remove('dragging'); });
+  strip.addEventListener('mouseup',    () => { isDown = false; strip.classList.remove('dragging'); });
+  strip.addEventListener('mousemove',  e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - strip.offsetLeft;
+    strip.scrollLeft = scrollLeft - (x - startX) * 1.5;
+  });
+})();
