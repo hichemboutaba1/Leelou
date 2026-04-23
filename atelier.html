@@ -5,7 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leelou Atelier Création — Pâtisserie & Ateliers · Sète</title>
   <meta name="description" content="Leelou Atelier Création à Sète. Ateliers pâtisserie, ateliers rencontre pour enfants et adultes, cantine. 9 rue Gambetta, 34200 Sète." />
+  <meta property="og:title" content="Leelou Atelier Création — Pâtisserie & Ateliers · Sète" />
+  <meta property="og:description" content="Ateliers pâtisserie et rencontre pour enfants et adultes, cantine de saison. 9 rue Gambetta, Sète." />
+  <meta property="og:type" content="LocalBusiness" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:image" content="images/atelier/atelier1.jpg" />
   <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Leelou Atelier Création",
+    "image": "images/atelier/atelier1.jpg",
+    "telephone": "+33499026993",
+    "email": "sete@leeloubistrot.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 rue Gambetta",
+      "addressLocality": "Sète",
+      "postalCode": "34200",
+      "addressCountry": "FR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 43.4053, "longitude": 3.6929 },
+    "sameAs": ["https://www.instagram.com/leelouateliercreation"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday",  "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",    "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday",  "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday",    "opens": "09:00", "closes": "15:00" }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200;300;400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
@@ -35,12 +67,14 @@
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+      <div id="status-badge" class="status-badge"></div>
       <ul class="nav-links">
         <li><a href="#ateliers">Ateliers</a></li>
         <li><a href="#cantine">La Cantine</a></li>
         <li><a href="#galerie-at">Galerie</a></li>
         <li><a href="#horaires-at">Horaires</a></li>
         <li><a href="#contact-at" class="nav-cta">Contact</a></li>
+        <li><a href="index.html" class="nav-atelier">🍴 Bistrot</a></li>
       </ul>
     </nav>
   </header>
@@ -151,15 +185,15 @@
     </div>
     <div class="galerie-strip-at" id="galerieStripAt">
       <div class="gstrack">
-        <img src="images/atelier/atelier1.jpg" alt="Atelier Leelou" />
-        <img src="images/atelier/atelier2.jpg" alt="Atelier Leelou" />
-        <img src="images/atelier/atelier3.jpg" alt="Atelier Leelou" />
-        <img src="images/atelier/atelier4.jpg" alt="Atelier Leelou" />
-        <img src="images/atelier/atelier5.jpg" alt="Atelier Leelou" />
-        <img src="images/atelier/atelier6.jpg" alt="Atelier Leelou" />
-        <img src="images/atelier/atelier7.jpg" alt="Atelier Leelou" />
-        <img src="images/atelier/atelier8.jpg" alt="Atelier Leelou" />
-        <img src="images/atelier/atelier9.jpg" alt="Atelier Leelou" />
+        <img src="images/atelier/atelier1.jpg" alt="Pâtisseries maison de l'Atelier Leelou" />
+        <img src="images/atelier/atelier2.jpg" alt="Ambiance atelier création Leelou, Sète" />
+        <img src="images/atelier/atelier3.jpg" alt="Desserts et gourmandises de l'Atelier Leelou" />
+        <img src="images/atelier/atelier4.jpg" alt="Atelier pâtisserie Leelou — participants" />
+        <img src="images/atelier/atelier5.jpg" alt="Création sucrée — Atelier Leelou Sète" />
+        <img src="images/atelier/atelier6.jpg" alt="La Cantine de Leelou — salle conviviale" />
+        <img src="images/atelier/atelier7.jpg" alt="Atelier rencontre Leelou — partage et bonne humeur" />
+        <img src="images/atelier/atelier8.jpg" alt="Vitrine pâtisseries Leelou Atelier Création" />
+        <img src="images/atelier/atelier9.jpg" alt="Leelou Atelier Création — 9 rue Gambetta Sète" />
       </div>
     </div>
   </section>
@@ -284,12 +318,15 @@
       </svg>
       <p>9 rue Gambetta · 34200 Sète · <a href="tel:0499026993">04 99 02 69 93</a></p>
       <p><a href="https://www.instagram.com/leelouateliercreation" target="_blank" rel="noopener">@leelouateliercreation</a></p>
-      <p class="footer-copy">© 2025 Leelou Atelier Création · <a href="index.html">Le Bistrot</a> · <a href="mentions-legales.html">Mentions légales</a></p>
+      <p class="footer-copy">© 2026 Leelou Atelier Création · <a href="index.html">Le Bistrot</a> · <a href="mentions-legales.html">Mentions légales</a></p>
     </div>
   </footer>
 
-  <button id="backTop" aria-label="Retour en haut">↑</button>
-  <a href="tel:0499026993" class="btn-float" aria-label="Appeler Leelou">📞</a>
+  <button id="backTop" class="back-top" aria-label="Retour en haut">↑</button>
+  <a href="tel:0499026993" class="btn-float" aria-label="Appeler Leelou">
+    <span class="btn-float__icon">📞</span>
+    <span class="btn-float__text">Appeler</span>
+  </a>
 
   <script src="js/main.js"></script>
 </body>
