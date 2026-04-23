@@ -1128,11 +1128,11 @@ section { padding: 5rem 0; }
   padding-bottom: 1.5rem;
 }
 .gstrack {
-  display: flex;
+  display: inline-flex;
   flex-wrap: nowrap;
   gap: 8px;
-  width: max-content;
   animation: gsScroll 30s linear infinite;
+  will-change: transform;
 }
 .galerie-strip-at:hover .gstrack { animation-play-state: paused; }
 .galerie-strip-at.touch-paused .gstrack { animation-play-state: paused; }
