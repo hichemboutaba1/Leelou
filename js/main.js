@@ -74,19 +74,22 @@ document.querySelectorAll('.logo-inline').forEach(async (el) => {
   }
 });
 
-// ---------- NAV MOBILE ----------
+// ---------- NAV MOBILE + HAMBURGER ANIMÉ ----------
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks  = document.querySelector('.nav-links');
 
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
+  navToggle.classList.toggle('open');
   const isOpen = navLinks.classList.contains('open');
   navToggle.setAttribute('aria-expanded', isOpen);
 });
 
-// Fermer le menu au clic sur un lien
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+  });
 });
 
 // ---------- HEADER SCROLL ----------
@@ -96,6 +99,29 @@ window.addEventListener('scroll', () => {
     ? '0 2px 16px rgba(0,0,0,0.10)'
     : 'none';
 });
+
+// ---------- NAV ACTIVE AU SCROLL ----------
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navItems.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+      });
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+
+sections.forEach(s => sectionObserver.observe(s));
+
+// ---------- BOUTON RETOUR EN HAUT ----------
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 // ---------- MENU TABS ----------
 document.querySelectorAll('.tab-btn').forEach(btn => {
