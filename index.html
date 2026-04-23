@@ -19,6 +19,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200;300;400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Leelou Bistrot & Gourmandises",
+    "image": "images/interieur.jpg",
+    "url": "",
+    "telephone": "+33499026993",
+    "email": "sete@leeloubistrot.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 rue Gambetta",
+      "addressLocality": "Sète",
+      "postalCode": "34200",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.4053,
+      "longitude": 3.6929
+    },
+    "servesCuisine": ["Française", "Méditerranéenne", "Bistrot"],
+    "priceRange": "€€",
+    "sameAs": ["https://www.instagram.com/leeloubistrot"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday",  "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",    "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday",  "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday",    "opens": "09:00", "closes": "15:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",   "opens": "10:00", "closes": "18:00" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -54,6 +90,7 @@
         <li><a href="#galerie">Galerie</a></li>
         <li><a href="#horaires">Horaires</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="atelier.html" class="nav-atelier">🎨 Atelier</a></li>
       </ul>
     </nav>
   </header>
@@ -435,7 +472,34 @@
             </div>
           </div>
         </div>
-        <div class="contact-map">
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" action="mailto:sete@leeloubistrot.com" method="POST" enctype="text/plain">
+            <h3>Envoyer un message</h3>
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="sujet">Sujet</label>
+              <select id="sujet" name="sujet">
+                <option value="reservation">Réservation</option>
+                <option value="brunch">Brunch du dimanche</option>
+                <option value="info">Renseignement</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Votre message…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Envoyer</button>
+          </form>
+
+          <div class="contact-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.123!2d3.6929!3d43.4053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b10b1e1b1b1b1b%3A0x1!2s9+Rue+Gambetta%2C+34200+S%C3%A8te%2C+France!5e0!3m2!1sfr!2sfr!4v1714000000000"
             width="100%"
@@ -446,6 +510,7 @@
             referrerpolicy="no-referrer-when-downgrade"
             title="Leelou Bistrot — 9 rue Gambetta, Sète">
           </iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -473,7 +538,7 @@
         </svg>
       <p>9 rue Gambetta · 34200 Sète · <a href="tel:0499026993">04 99 02 69 93</a></p>
       <p><a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
-      <p class="footer-copy">© 2025 Leelou Bistrot & Gourmandises — Tous droits réservés</p>
+      <p class="footer-copy">© 2025 Leelou Bistrot & Gourmandises — Tous droits réservés · <a href="atelier.html">🎨 Atelier Création</a> · <a href="mentions-legales.html">Mentions légales</a></p>
     </div>
   </footer>
 

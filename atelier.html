@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leelou Atelier Création — Pâtisserie & Ateliers · Sète</title>
+  <meta name="description" content="Leelou Atelier Création à Sète. Ateliers pâtisserie, ateliers rencontre pour enfants et adultes, cantine. 9 rue Gambetta, 34200 Sète." />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200;300;400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="atelier.html" class="nav-logo" aria-label="Leelou Atelier Création">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--nav">
+          <defs>
+            <path id="topArc-at" d="M 62,250 A 188,188 0 0,1 438,250"/>
+            <clipPath id="circleClip-at"><circle cx="250" cy="250" r="238"/></clipPath>
+          </defs>
+          <circle cx="250" cy="250" r="245" fill="#faf7f5"/><circle cx="250" cy="250" r="240" fill="white"/><circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+          <g clip-path="url(#circleClip-at)">
+            <g opacity="0.80"><ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/><ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/></g>
+            <g opacity="0.75"><ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/></g>
+            <g opacity="0.72"><ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/></g>
+          </g>
+          <text font-family="'Josefin Sans', 'Century Gothic', sans-serif" font-size="17" letter-spacing="4" fill="#3a2215" font-weight="300"><textPath href="#topArc-at" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath></text>
+          <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
+        </svg>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#ateliers">Ateliers</a></li>
+        <li><a href="#cantine">La Cantine</a></li>
+        <li><a href="#galerie-at">Galerie</a></li>
+        <li><a href="#horaires-at">Horaires</a></li>
+        <li><a href="#contact-at" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ATELIER ========== -->
+  <section id="hero-atelier" style="background-image:url('images/atelier/atelier1.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">9 rue Gambetta · Sète</p>
+      <h1 class="hero-atelier-title">Leelou<br>Atelier Création</h1>
+      <p class="hero-sub">Pâtisserie · Ateliers rencontre · Cantine<br>Pour les enfants et les adultes</p>
+      <div class="hero-actions">
+        <a href="#ateliers" class="btn btn-primary">Découvrir les ateliers</a>
+        <a href="index.html" class="btn btn-secondary">← Le Bistrot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACTIVITÉS ========== -->
+  <section id="ateliers">
+    <div class="container">
+      <span class="section-label">Ce que nous proposons</span>
+      <h2>Nos Ateliers</h2>
+      <div class="activites-grid">
+
+        <div class="activite-card">
+          <div class="activite-icon">🧁</div>
+          <h3>Ateliers Pâtisserie</h3>
+          <p>Venez apprendre les secrets de la pâtisserie maison dans une ambiance chaleureuse et bienveillante. Des recettes accessibles à tous, pour repartir avec ses créations !</p>
+          <ul class="activite-details">
+            <li>Enfants &amp; adultes</li>
+            <li>Petits groupes</li>
+            <li>Tous niveaux</li>
+          </ul>
+          <a href="#contact-at" class="btn btn-primary">S'inscrire</a>
+        </div>
+
+        <div class="activite-card">
+          <div class="activite-icon">👩‍👧‍👦</div>
+          <h3>Ateliers Rencontre</h3>
+          <p>Des moments de partage et de création collective. Ces ateliers favorisent le lien social à travers des activités manuelles et gourmandes, dans la bonne humeur.</p>
+          <ul class="activite-details">
+            <li>Enfants &amp; adultes</li>
+            <li>Ambiance conviviale</li>
+            <li>Sur inscription</li>
+          </ul>
+          <a href="#contact-at" class="btn btn-primary">S'inscrire</a>
+        </div>
+
+        <div class="activite-card">
+          <div class="activite-icon">🍴</div>
+          <h3>La Cantine</h3>
+          <p>Un repas simple, fait maison, dans un cadre chaleureux. La cantine de Leelou, c'est le plaisir du fait-maison avec des produits frais du marché.</p>
+          <ul class="activite-details">
+            <li>Cuisine de saison</li>
+            <li>Produits locaux</li>
+            <li>Ambiance bistrot</li>
+          </ul>
+          <a href="#cantine" class="btn btn-primary">En savoir plus</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CANTINE ========== -->
+  <section id="cantine">
+    <div class="container">
+      <div class="cantine-at-grid">
+        <div class="cantine-at-image">
+          <img src="images/atelier/atelier6.jpg" alt="La Cantine de Leelou" loading="lazy" />
+        </div>
+        <div class="cantine-at-text">
+          <span class="section-label">Midi en semaine</span>
+          <h2>La Cantine de Leelou</h2>
+          <p>Chaque midi, retrouvez une cuisine de saison préparée avec soin. Un plat du jour, des desserts maison, dans l'esprit simple et généreux de Leelou.</p>
+          <p>Une adresse de quartier où il fait bon se retrouver autour d'une table.</p>
+          <div class="cantine-at-horaires">
+            <div class="cantine-slot">
+              <span>Mercredi – Vendredi</span>
+              <span>12h – 15h</span>
+            </div>
+            <div class="cantine-slot">
+              <span>Samedi</span>
+              <span>12h – 15h</span>
+            </div>
+          </div>
+          <a href="#contact-at" class="btn btn-primary">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERIE ========== -->
+  <section id="galerie-at">
+    <div class="container">
+      <span class="section-label">En images</span>
+      <h2>L'Atelier en photos</h2>
+      <div class="galerie-grid galerie-at-grid">
+        <div class="galerie-item"><img src="images/atelier/atelier1.jpg" alt="Atelier Leelou" loading="lazy" /></div>
+        <div class="galerie-item"><img src="images/atelier/atelier2.jpg" alt="Atelier Leelou" loading="lazy" /></div>
+        <div class="galerie-item"><img src="images/atelier/atelier3.jpg" alt="Atelier Leelou" loading="lazy" /></div>
+        <div class="galerie-item"><img src="images/atelier/atelier4.jpg" alt="Atelier Leelou" loading="lazy" /></div>
+        <div class="galerie-item"><img src="images/atelier/atelier5.jpg" alt="Atelier Leelou" loading="lazy" /></div>
+        <div class="galerie-item galerie-item--large"><img src="images/atelier/atelier7.jpg" alt="Atelier Leelou" loading="lazy" /></div>
+        <div class="galerie-item"><img src="images/atelier/atelier8.jpg" alt="Atelier Leelou" loading="lazy" /></div>
+        <div class="galerie-item"><img src="images/atelier/atelier9.jpg" alt="Atelier Leelou" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HORAIRES ========== -->
+  <section id="horaires-at">
+    <div class="container">
+      <span class="section-label">Quand nous rendre visite</span>
+      <h2>Horaires</h2>
+      <div class="horaires-grid">
+        <div class="horaires-card">
+          <h3>Ouverture</h3>
+          <ul>
+            <li><span>Mercredi – Vendredi</span><span>10h – 18h</span></li>
+            <li><span>Samedi</span><span>9h – 18h</span></li>
+            <li><span>Dimanche</span><span>9h – 15h</span></li>
+            <li class="fermé"><span>Lundi – Mardi</span><span>Fermé</span></li>
+          </ul>
+        </div>
+        <div class="horaires-card">
+          <h3>Ateliers</h3>
+          <ul>
+            <li><span>Sur inscription</span><span>—</span></li>
+            <li><span>Dates variables</span><span>—</span></li>
+          </ul>
+          <p style="font-size:0.85rem;color:var(--brun-light);margin-top:1rem;">Contactez-nous pour connaître le programme et les prochaines dates disponibles.</p>
+        </div>
+        <div class="horaires-card">
+          <h3>La Cantine</h3>
+          <ul>
+            <li><span>Mercredi – Samedi</span><span>12h – 15h</span></li>
+            <li class="fermé"><span>Dimanche – Mardi</span><span>Fermé</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact-at">
+    <div class="container">
+      <span class="section-label">Nous rejoindre</span>
+      <h2>Contact &amp; Inscription</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Adresse</strong>
+              <p>9 rue Gambetta<br />34200 Sète</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Téléphone</strong>
+              <p><a href="tel:0499026993">04 99 02 69 93</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:sete@leeloubistrot.com">sete@leeloubistrot.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📸</span>
+            <div>
+              <strong>Instagram</strong>
+              <p><a href="https://www.instagram.com/leelouateliercreation" target="_blank" rel="noopener">@leelouateliercreation</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" action="mailto:sete@leeloubistrot.com" method="POST" enctype="text/plain">
+            <h3>Inscription &amp; Renseignements</h3>
+            <div class="form-group">
+              <label for="at-nom">Nom</label>
+              <input type="text" id="at-nom" name="nom" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="at-email">Email</label>
+              <input type="email" id="at-email" name="email" placeholder="votre@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="at-sujet">Je souhaite</label>
+              <select id="at-sujet" name="sujet">
+                <option value="atelier-patisserie">Atelier Pâtisserie</option>
+                <option value="atelier-rencontre">Atelier Rencontre</option>
+                <option value="cantine">La Cantine</option>
+                <option value="info">Renseignement général</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="at-message">Message</label>
+              <textarea id="at-message" name="message" rows="4" placeholder="Votre message, nombre de participants…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--footer" aria-label="Leelou">
+        <defs>
+          <path id="topArc-at-footer" d="M 62,250 A 188,188 0 0,1 438,250"/>
+          <clipPath id="circleClip-at-footer"><circle cx="250" cy="250" r="238"/></clipPath>
+        </defs>
+        <circle cx="250" cy="250" r="245" fill="#faf7f5"/><circle cx="250" cy="250" r="240" fill="white"/><circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+        <g clip-path="url(#circleClip-at-footer)">
+          <g opacity="0.80"><ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/><ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/></g>
+          <g opacity="0.75"><ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/></g>
+          <g opacity="0.72"><ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/></g>
+        </g>
+        <text font-family="'Josefin Sans', 'Century Gothic', sans-serif" font-size="17" letter-spacing="4" fill="#3a2215" font-weight="300"><textPath href="#topArc-at-footer" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath></text>
+        <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
+      </svg>
+      <p>9 rue Gambetta · 34200 Sète · <a href="tel:0499026993">04 99 02 69 93</a></p>
+      <p><a href="https://www.instagram.com/leelouateliercreation" target="_blank" rel="noopener">@leelouateliercreation</a></p>
+      <p class="footer-copy">© 2025 Leelou Atelier Création · <a href="index.html">Le Bistrot</a> · <a href="mentions-legales.html">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <button id="backTop" aria-label="Retour en haut">↑</button>
+  <a href="tel:0499026993" class="btn-float" aria-label="Appeler Leelou">📞</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
