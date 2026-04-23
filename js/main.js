@@ -2,6 +2,58 @@
    LEELOU BISTROT — JavaScript principal
    ============================================= */
 
+// ---------- INDICATEUR OUVERT / FERMÉ ----------
+(function() {
+  const now  = new Date();
+  const day  = now.getDay(); // 0=dim, 1=lun, 2=mar, 3=mer, 4=jeu, 5=ven, 6=sam
+  const h    = now.getHours() + now.getMinutes() / 60;
+
+  const horaires = {
+    0: { open: 9,  close: 15 },  // dimanche
+    1: null,                      // lundi fermé
+    2: { open: 10, close: 18 },  // mardi
+    3: { open: 10, close: 18 },  // mercredi
+    4: { open: 10, close: 18 },  // jeudi
+    5: { open: 10, close: 18 },  // vendredi
+    6: { open: 9,  close: 18 },  // samedi
+  };
+
+  const badge = document.getElementById('status-badge');
+  if (!badge) return;
+  const today = horaires[day];
+  if (today && h >= today.open && h < today.close) {
+    badge.textContent = '● Ouvert';
+    badge.classList.add('open');
+  } else {
+    badge.textContent = '● Fermé';
+    badge.classList.add('closed');
+  }
+})();
+
+// ---------- CARROUSEL GALERIE MOBILE ----------
+(function() {
+  const track = document.getElementById('carouselTrack');
+  const dotsContainer = document.getElementById('carouselDots');
+  if (!track || !dotsContainer) return;
+
+  const slides = track.querySelectorAll('.carousel-slide');
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Photo ' + (i + 1));
+    dot.addEventListener('click', () => {
+      slides[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.carousel-dot');
+  track.addEventListener('scroll', () => {
+    const idx = Math.round(track.scrollLeft / track.offsetWidth);
+    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+  }, { passive: true });
+})();
+
 // ---------- INLINE SVG LOGOS (pour que les polices Google Fonts fonctionnent) ----------
 document.querySelectorAll('.logo-inline').forEach(async (el) => {
   try {

@@ -47,6 +47,7 @@
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
+      <div id="status-badge" class="status-badge"></div>
       <ul class="nav-links">
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#menu">La Carte</a></li>
@@ -58,7 +59,7 @@
   </header>
 
   <!-- ========== HERO ========== -->
-  <section id="hero">
+  <section id="hero" style="background-image: url('images/interieur.jpg')">
     <div class="hero-content">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--hero" aria-label="Leelou">
           <defs>
@@ -248,11 +249,33 @@
     </div>
   </section>
 
+  <!-- ========== BRUNCH ========== -->
+  <section id="brunch">
+    <div class="container">
+      <div class="brunch-grid">
+        <div class="brunch-image">
+          <img src="images/plat3.jpg" alt="Brunch Leelou" />
+        </div>
+        <div class="brunch-text">
+          <span class="section-label">Le dimanche</span>
+          <h2>Le Brunch de Leelou</h2>
+          <p>Chaque dimanche de 9h à 17h, Leelou vous invite à un brunch gourmand dans une atmosphère chaleureuse. Pâtisseries maisons, œufs, viennoiseries, jus frais et café… un moment suspendu au cœur de Sète.</p>
+          <div class="brunch-horaire">
+            <span class="brunch-day">Dimanche</span>
+            <span class="brunch-time">9h00 — 17h00</span>
+          </div>
+          <a href="tel:0499026993" class="btn btn-brunch">Réserver · 04 99 02 69 93</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== GALERIE ========== -->
   <section id="galerie">
     <div class="container">
       <span class="section-label">En images</span>
       <h2>La Galerie</h2>
+      <!-- Grille desktop -->
       <div class="galerie-grid">
         <div class="galerie-item"><img src="images/plat1.jpg" alt="Maquereau rôti, aubergines confites, framboises" /></div>
         <div class="galerie-item"><img src="images/plat2.jpg" alt="Mijoté de bœuf aux légumes de saison" /></div>
@@ -262,6 +285,20 @@
         <div class="galerie-item"><img src="images/plat6.jpg" alt="Salade carpaccio, roquette, parmesan" /></div>
         <div class="galerie-item"><img src="images/plat7.jpg" alt="Table Leelou — ambiance déjeuner" /></div>
         <div class="galerie-item galerie-item--large"><img src="images/interieur2.jpg" alt="Vitrine pâtisseries Leelou" /></div>
+      </div>
+      <!-- Carrousel mobile -->
+      <div class="galerie-carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide"><img src="images/plat1.jpg" alt="Maquereau rôti" /></div>
+          <div class="carousel-slide"><img src="images/plat2.jpg" alt="Mijoté de bœuf" /></div>
+          <div class="carousel-slide"><img src="images/plat3.jpg" alt="Pâtisserie maison" /></div>
+          <div class="carousel-slide"><img src="images/plat4.jpg" alt="Tarte soufflée et poisson" /></div>
+          <div class="carousel-slide"><img src="images/plat5.jpg" alt="Filet mignon" /></div>
+          <div class="carousel-slide"><img src="images/plat6.jpg" alt="Salade carpaccio" /></div>
+          <div class="carousel-slide"><img src="images/plat7.jpg" alt="Ambiance déjeuner" /></div>
+          <div class="carousel-slide"><img src="images/interieur2.jpg" alt="Vitrine pâtisseries" /></div>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
       </div>
     </div>
   </section>
@@ -390,6 +427,12 @@
       <p class="footer-copy">© 2025 Leelou Bistrot & Gourmandises — Tous droits réservés</p>
     </div>
   </footer>
+
+  <!-- Bouton flottant appel -->
+  <a href="tel:0499026993" class="btn-float" aria-label="Appeler Leelou">
+    <span class="btn-float__icon">📞</span>
+    <span class="btn-float__text">Appeler</span>
+  </a>
 
   <script src="js/main.js"></script>
 </body>
