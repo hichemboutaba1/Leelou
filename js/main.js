@@ -147,7 +147,10 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(
-  '#apropos, #menu, #galerie, #horaires, #contact, .horaires-card, .menu-category, .galerie-item, .contact-item'
+  '#apropos, #menu, #galerie, #horaires, #contact, ' +
+  '#ateliers, #cantine, #galerie-at, #horaires-at, #contact-at, ' +
+  '.horaires-card, .menu-category, .galerie-item, .contact-item, ' +
+  '.activite-card, .cantine-at-grid'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
