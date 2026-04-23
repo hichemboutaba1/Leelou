@@ -1011,48 +1011,57 @@ section { padding: 5rem 0; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #fdf6f0;
+  background:
+    linear-gradient(135deg,
+      #c4714a 0%,
+      #d4895e 20%,
+      #e8a090 40%,
+      #f0b8c8 65%,
+      #f5d8e4 85%,
+      #fdf0f4 100%
+    );
   overflow: hidden;
 }
 
-/* Blobs aquarelle */
+/* Taches aquarelle en surimpression */
 .hero-at-blobs { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
 .blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(70px);
-  opacity: 0.55;
+  filter: blur(48px);
 }
 .blob-1 {
-  width: 55vw; height: 55vw;
-  top: -15%; left: -10%;
-  background: radial-gradient(circle, #f4bfce, #f0a8be);
+  width: 50vw; height: 50vw;
+  top: -5%; left: -5%;
+  background: #bf6040;
+  opacity: 0.45;
 }
 .blob-2 {
-  width: 45vw; height: 45vw;
-  bottom: -10%; right: -8%;
-  background: radial-gradient(circle, #e8b89a, #c4714a88);
+  width: 40vw; height: 40vw;
+  bottom: -8%; right: -5%;
+  background: #f4a8c0;
+  opacity: 0.50;
 }
 .blob-3 {
-  width: 35vw; height: 35vw;
-  top: 10%; right: 15%;
-  background: radial-gradient(circle, #b8d4c0, #7a8c5c66);
-  opacity: 0.35;
+  width: 32vw; height: 32vw;
+  top: 5%; right: 10%;
+  background: #7a8c5c;
+  opacity: 0.20;
 }
 .blob-4 {
-  width: 30vw; height: 30vw;
-  bottom: 5%; left: 20%;
-  background: radial-gradient(circle, #fae3ea, #f7d0dc);
-  opacity: 0.5;
+  width: 28vw; height: 28vw;
+  bottom: 10%; left: 15%;
+  background: #e87060;
+  opacity: 0.25;
 }
 .blob-5 {
-  width: 25vw; height: 25vw;
-  top: 40%; left: 40%;
-  background: radial-gradient(circle, #fdf0e8, #f5e4d4);
-  opacity: 0.6;
+  width: 20vw; height: 20vw;
+  top: 45%; right: 25%;
+  background: #fff0f4;
+  opacity: 0.35;
 }
 
-/* Texte hero atelier sur fond clair */
+/* Texte hero atelier sur fond dégradé terracotta */
 .hero-content--light { position: relative; z-index: 2; padding: 2rem 1.5rem; }
 .hero-tagline--dark {
   font-family: var(--font-body);
@@ -1060,28 +1069,29 @@ section { padding: 5rem 0; }
   font-weight: 300;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--terra);
+  color: rgba(255,255,255,0.85);
   margin-bottom: 0.8rem;
 }
 .hero-atelier-title {
   font-family: var(--font-script);
   font-size: clamp(3rem, 9vw, 6rem);
-  color: var(--brun);
+  color: #fff;
   line-height: 1.1;
   margin-bottom: 1rem;
+  text-shadow: 0 2px 16px rgba(100,30,10,0.25);
 }
 .hero-sub--dark {
   font-family: var(--font-title);
   font-style: italic;
   font-size: clamp(0.95rem, 2vw, 1.2rem);
-  color: var(--brun-light);
+  color: rgba(255,255,255,0.90);
   max-width: 500px;
   margin: 0 auto 2.5rem;
 }
 .btn-outline-terra {
   background: transparent;
-  color: var(--terra);
-  border: 2px solid var(--terra);
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.7);
   padding: 0.75rem 2rem;
   border-radius: 50px;
   font-family: var(--font-body);
@@ -1092,17 +1102,17 @@ section { padding: 5rem 0; }
   transition: var(--transition);
   cursor: pointer;
 }
-.btn-outline-terra:hover { background: var(--terra); color: #fff; }
+.btn-outline-terra:hover { background: rgba(255,255,255,0.18); border-color: #fff; }
 
 .hero-switch-btn--dark {
-  border-color: rgba(58,34,21,0.3);
-  color: var(--brun-light);
-  background: rgba(58,34,21,0.05);
+  border-color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.08);
 }
 .hero-switch-btn--dark:hover {
-  background: rgba(58,34,21,0.1);
-  border-color: var(--brun-light);
-  color: var(--brun);
+  background: rgba(255,255,255,0.20);
+  border-color: #fff;
+  color: #fff;
 }
 
 /* ---------- GALERIE ATELIER (bande horizontale) ---------- */
