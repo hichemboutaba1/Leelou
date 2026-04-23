@@ -123,7 +123,7 @@ h3 {
   gap: 1rem;
 }
 
-.nav-logo img { height: 52px; width: auto; }
+.nav-logo img { height: 52px; width: auto; border-radius: 50%; }
 
 .nav-links {
   display: flex;
@@ -200,6 +200,7 @@ h3 {
 .hero-logo {
   width: min(220px, 55vw);
   margin: 0 auto 1.5rem;
+  border-radius: 50%;
   filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
 }
 
@@ -473,7 +474,7 @@ section { padding: 5rem 0; }
 }
 
 .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; }
-.footer-logo { height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.85; margin-bottom: 0.5rem; }
+.footer-logo { height: 60px; width: auto; border-radius: 50%; opacity: 0.85; margin-bottom: 0.5rem; }
 .footer-inner p { font-size: 0.82rem; }
 .footer-inner a:hover { color: #fff; }
 .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin-top: 0.5rem; }
