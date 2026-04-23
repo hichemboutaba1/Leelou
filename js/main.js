@@ -186,52 +186,22 @@ document.querySelectorAll('.galerie-item img').forEach(img => {
   });
 });
 
-// ---------- AUTO-SCROLL + DRAG GALERIE ATELIER ----------
+// ---------- GALERIE ATELIER — boucle infinie CSS ----------
 (function() {
-  const strip = document.getElementById('galerieStripAt');
-  if (!strip) return;
+  const track = document.querySelector('#galerieStripAt .gstrack');
+  if (!track) return;
 
-  // Duplicate images for seamless infinite loop
-  Array.from(strip.querySelectorAll('img')).forEach(img => {
-    strip.appendChild(img.cloneNode(true));
+  // Duplicate all images so the CSS animation can loop seamlessly (-50%)
+  Array.from(track.querySelectorAll('img')).forEach(img => {
+    track.appendChild(img.cloneNode(true));
   });
 
-  const speed = 0.7; // px per frame
-  let paused = false;
-  let isDown = false;
-  let startX, savedScrollLeft;
-
-  function tick() {
-    if (!paused && !isDown) {
-      strip.scrollLeft += speed;
-      // When we reach the halfway point, jump back silently
-      if (strip.scrollLeft >= strip.scrollWidth / 2) {
-        strip.scrollLeft -= strip.scrollWidth / 2;
-      }
-    }
-    requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-
-  // Pause on hover
-  strip.addEventListener('mouseenter', () => { paused = true; });
-  strip.addEventListener('mouseleave', () => { paused = false; isDown = false; strip.classList.remove('dragging'); });
-
-  // Pause on touch, resume 2s after release
-  strip.addEventListener('touchstart', () => { paused = true; }, { passive: true });
-  strip.addEventListener('touchend',   () => { setTimeout(() => { paused = false; }, 2000); }, { passive: true });
-
-  // Drag scroll
-  strip.addEventListener('mousedown', e => {
-    isDown = true;
-    strip.classList.add('dragging');
-    startX = e.pageX - strip.offsetLeft;
-    savedScrollLeft = strip.scrollLeft;
-  });
-  strip.addEventListener('mouseup', () => { isDown = false; strip.classList.remove('dragging'); });
-  strip.addEventListener('mousemove', e => {
-    if (!isDown) return;
-    e.preventDefault();
-    strip.scrollLeft = savedScrollLeft - (e.pageX - strip.offsetLeft - startX) * 1.5;
-  });
+  // Pause on touch, resume after 2s
+  const strip = track.parentElement;
+  strip.addEventListener('touchstart', () => {
+    strip.classList.add('touch-paused');
+  }, { passive: true });
+  strip.addEventListener('touchend', () => {
+    setTimeout(() => strip.classList.remove('touch-paused'), 2000);
+  }, { passive: true });
 })();
