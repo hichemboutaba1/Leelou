@@ -25,8 +25,24 @@
   <!-- ========== HEADER / NAV ========== -->
   <header id="header">
     <nav class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <div class="logo-inline logo-nav" data-src="logo.svg" aria-label="Leelou Bistrot & Gourmandises"></div>
+      <a href="#hero" class="nav-logo" aria-label="Leelou Bistrot & Gourmandises">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--nav">
+          <defs>
+            <path id="topArc-nav" d="M 62,250 A 188,188 0 0,1 438,250"/>
+            <clipPath id="circleClip-nav"><circle cx="250" cy="250" r="238"/></clipPath>
+          </defs>
+          <circle cx="250" cy="250" r="245" fill="#faf7f5"/><circle cx="250" cy="250" r="240" fill="white"/><circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+          <g clip-path="url(#circleClip-nav)">
+            <ellipse cx="90" cy="365" rx="30" ry="10" fill="#7ec8b0" opacity="0.55" transform="rotate(40,90,365)"/><ellipse cx="108" cy="385" rx="26" ry="9" fill="#90d0b8" opacity="0.50" transform="rotate(58,108,385)"/><ellipse cx="75" cy="382" rx="24" ry="8" fill="#6dbaa5" opacity="0.52" transform="rotate(22,75,382)"/><ellipse cx="408" cy="362" rx="28" ry="9" fill="#7ec8b0" opacity="0.55" transform="rotate(-42,408,362)"/><ellipse cx="392" cy="382" rx="24" ry="8" fill="#90d0b8" opacity="0.50" transform="rotate(-60,392,382)"/>
+            <g opacity="0.80"><ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/><ellipse cx="155" cy="373" rx="40" ry="32" fill="#f4bfce" transform="rotate(12,155,373)"/><ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/><ellipse cx="156" cy="376" rx="22" ry="17" fill="#fae3ea" transform="rotate(22,156,376)"/><circle cx="156" cy="377" r="5" fill="#eba8c0" opacity="0.6"/></g>
+            <g opacity="0.75"><ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/><ellipse cx="252" cy="388" rx="36" ry="29" fill="#f2b8ca" transform="rotate(-22,252,388)"/><ellipse cx="254" cy="389" rx="27" ry="22" fill="#f6cdd8" transform="rotate(14,254,389)"/><circle cx="253" cy="390" r="6" fill="#e898b5" opacity="0.65"/></g>
+            <g opacity="0.72"><ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/><ellipse cx="345" cy="376" rx="34" ry="27" fill="#f4c2d0" transform="rotate(-12,345,376)"/><ellipse cx="347" cy="377" rx="25" ry="20" fill="#f7d3dc" transform="rotate(7,347,377)"/><circle cx="346" cy="378" r="5" fill="#eca5be" opacity="0.6"/></g>
+          </g>
+          <text font-family="'Josefin Sans', 'Century Gothic', sans-serif" font-size="17" letter-spacing="4" fill="#3a2215" font-weight="300"><textPath href="#topArc-nav" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath></text>
+          <path d="M 108,258 C 115,242 130,240 140,253 C 150,266 142,278 136,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M 392,258 C 385,242 370,240 360,253 C 350,266 358,278 364,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
+        </svg>
       </a>
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -44,7 +60,23 @@
   <!-- ========== HERO ========== -->
   <section id="hero">
     <div class="hero-content">
-      <div class="logo-inline logo-hero" data-src="logo.svg" aria-label="Leelou"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--hero" aria-label="Leelou">
+          <defs>
+            <path id="topArc-hero" d="M 62,250 A 188,188 0 0,1 438,250"/>
+            <clipPath id="circleClip-hero"><circle cx="250" cy="250" r="238"/></clipPath>
+          </defs>
+          <circle cx="250" cy="250" r="245" fill="#faf7f5"/><circle cx="250" cy="250" r="240" fill="white"/><circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+          <g clip-path="url(#circleClip-hero)">
+            <ellipse cx="90" cy="365" rx="30" ry="10" fill="#7ec8b0" opacity="0.55" transform="rotate(40,90,365)"/><ellipse cx="108" cy="385" rx="26" ry="9" fill="#90d0b8" opacity="0.50" transform="rotate(58,108,385)"/><ellipse cx="75" cy="382" rx="24" ry="8" fill="#6dbaa5" opacity="0.52" transform="rotate(22,75,382)"/><ellipse cx="408" cy="362" rx="28" ry="9" fill="#7ec8b0" opacity="0.55" transform="rotate(-42,408,362)"/><ellipse cx="392" cy="382" rx="24" ry="8" fill="#90d0b8" opacity="0.50" transform="rotate(-60,392,382)"/>
+            <g opacity="0.80"><ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/><ellipse cx="155" cy="373" rx="40" ry="32" fill="#f4bfce" transform="rotate(12,155,373)"/><ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/><ellipse cx="156" cy="376" rx="22" ry="17" fill="#fae3ea" transform="rotate(22,156,376)"/><circle cx="156" cy="377" r="5" fill="#eba8c0" opacity="0.6"/></g>
+            <g opacity="0.75"><ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/><ellipse cx="252" cy="388" rx="36" ry="29" fill="#f2b8ca" transform="rotate(-22,252,388)"/><ellipse cx="254" cy="389" rx="27" ry="22" fill="#f6cdd8" transform="rotate(14,254,389)"/><circle cx="253" cy="390" r="6" fill="#e898b5" opacity="0.65"/></g>
+            <g opacity="0.72"><ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/><ellipse cx="345" cy="376" rx="34" ry="27" fill="#f4c2d0" transform="rotate(-12,345,376)"/><ellipse cx="347" cy="377" rx="25" ry="20" fill="#f7d3dc" transform="rotate(7,347,377)"/><circle cx="346" cy="378" r="5" fill="#eca5be" opacity="0.6"/></g>
+          </g>
+          <text font-family="'Josefin Sans', 'Century Gothic', sans-serif" font-size="17" letter-spacing="4" fill="#3a2215" font-weight="300"><textPath href="#topArc-hero" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath></text>
+          <path d="M 108,258 C 115,242 130,240 140,253 C 150,266 142,278 136,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M 392,258 C 385,242 370,240 360,253 C 350,266 358,278 364,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
+        </svg>
       <p class="hero-tagline">Bistrot & Gourmandises · Sète</p>
       <p class="hero-sub">Cuisine de saison, pâtisseries maison, saveurs méditerranéennes</p>
       <div class="hero-actions">
@@ -336,7 +368,23 @@
   <!-- ========== FOOTER ========== -->
   <footer id="footer">
     <div class="container footer-inner">
-      <div class="logo-inline logo-footer" data-src="logo.svg" aria-label="Leelou"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--footer" aria-label="Leelou">
+          <defs>
+            <path id="topArc-footer" d="M 62,250 A 188,188 0 0,1 438,250"/>
+            <clipPath id="circleClip-footer"><circle cx="250" cy="250" r="238"/></clipPath>
+          </defs>
+          <circle cx="250" cy="250" r="245" fill="#faf7f5"/><circle cx="250" cy="250" r="240" fill="white"/><circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+          <g clip-path="url(#circleClip-footer)">
+            <ellipse cx="90" cy="365" rx="30" ry="10" fill="#7ec8b0" opacity="0.55" transform="rotate(40,90,365)"/><ellipse cx="108" cy="385" rx="26" ry="9" fill="#90d0b8" opacity="0.50" transform="rotate(58,108,385)"/><ellipse cx="75" cy="382" rx="24" ry="8" fill="#6dbaa5" opacity="0.52" transform="rotate(22,75,382)"/><ellipse cx="408" cy="362" rx="28" ry="9" fill="#7ec8b0" opacity="0.55" transform="rotate(-42,408,362)"/><ellipse cx="392" cy="382" rx="24" ry="8" fill="#90d0b8" opacity="0.50" transform="rotate(-60,392,382)"/>
+            <g opacity="0.80"><ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/><ellipse cx="155" cy="373" rx="40" ry="32" fill="#f4bfce" transform="rotate(12,155,373)"/><ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/><ellipse cx="156" cy="376" rx="22" ry="17" fill="#fae3ea" transform="rotate(22,156,376)"/><circle cx="156" cy="377" r="5" fill="#eba8c0" opacity="0.6"/></g>
+            <g opacity="0.75"><ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/><ellipse cx="252" cy="388" rx="36" ry="29" fill="#f2b8ca" transform="rotate(-22,252,388)"/><ellipse cx="254" cy="389" rx="27" ry="22" fill="#f6cdd8" transform="rotate(14,254,389)"/><circle cx="253" cy="390" r="6" fill="#e898b5" opacity="0.65"/></g>
+            <g opacity="0.72"><ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/><ellipse cx="345" cy="376" rx="34" ry="27" fill="#f4c2d0" transform="rotate(-12,345,376)"/><ellipse cx="347" cy="377" rx="25" ry="20" fill="#f7d3dc" transform="rotate(7,347,377)"/><circle cx="346" cy="378" r="5" fill="#eca5be" opacity="0.6"/></g>
+          </g>
+          <text font-family="'Josefin Sans', 'Century Gothic', sans-serif" font-size="17" letter-spacing="4" fill="#3a2215" font-weight="300"><textPath href="#topArc-footer" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath></text>
+          <path d="M 108,258 C 115,242 130,240 140,253 C 150,266 142,278 136,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M 392,258 C 385,242 370,240 360,253 C 350,266 358,278 364,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
+        </svg>
       <p>9 rue Gambetta · 34200 Sète · <a href="tel:0499026993">04 99 02 69 93</a></p>
       <p><a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
       <p class="footer-copy">© 2025 Leelou Bistrot & Gourmandises — Tous droits réservés</p>
