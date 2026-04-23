@@ -2,6 +2,26 @@
    LEELOU BISTROT — JavaScript principal
    ============================================= */
 
+// ---------- INLINE SVG LOGOS (pour que les polices Google Fonts fonctionnent) ----------
+document.querySelectorAll('.logo-inline').forEach(async (el) => {
+  try {
+    const res = await fetch(el.dataset.src);
+    const svgText = await res.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(svgText, 'image/svg+xml');
+    const svg = doc.querySelector('svg');
+    if (svg) {
+      svg.removeAttribute('width');
+      svg.removeAttribute('height');
+      svg.style.width = '100%';
+      svg.style.height = '100%';
+      el.appendChild(svg);
+    }
+  } catch (e) {
+    console.warn('Logo SVG non chargé', e);
+  }
+});
+
 // ---------- NAV MOBILE ----------
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks  = document.querySelector('.nav-links');
