@@ -290,11 +290,25 @@ section { padding: 5rem 0; }
 #apropos { background: var(--blanc); }
 #menu    { background: var(--beige); }
 #galerie { background: var(--blanc); }
-#horaires, #horaires-at { background: var(--bleu); color: #fff; }
-#horaires h2, #horaires .section-label,
-#horaires-at h2, #horaires-at .section-label { color: #fff; }
-#horaires .section-label,
-#horaires-at .section-label { color: rgba(255,255,255,0.7); }
+#horaires { background: var(--bleu); color: #fff; }
+#horaires h2, #horaires .section-label { color: #fff; }
+#horaires .section-label { color: rgba(255,255,255,0.7); }
+
+/* Horaires Atelier — fond chaud, texte foncé */
+#horaires-at { background: var(--beige); }
+#horaires-at h2 { color: var(--brun); }
+#horaires-at .section-label { color: var(--terra); }
+#horaires-at .horaires-card {
+  background: #fff;
+  border: 1px solid var(--beige-dark);
+}
+#horaires-at .horaires-card h3 { color: var(--brun); }
+#horaires-at .horaires-card ul li {
+  color: var(--brun-light);
+  border-bottom-color: var(--beige-dark);
+}
+#horaires-at .horaires-card ul li.fermé { color: var(--gris); }
+
 #contact { background: var(--beige); }
 
 /* ---------- À PROPOS ---------- */
