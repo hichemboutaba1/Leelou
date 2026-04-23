@@ -2,6 +2,55 @@
    LEELOU BISTROT — JavaScript principal
    ============================================= */
 
+// ---------- RGPD — CONSENTEMENT COOKIES ----------
+(function() {
+  const banner  = document.getElementById('cookie-banner');
+  if (!banner) return;
+
+  function loadMap() {
+    document.querySelectorAll('.map-placeholder').forEach(placeholder => {
+      const src = placeholder.dataset.src;
+      if (!src) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = src;
+      iframe.width = '100%';
+      iframe.height = '350';
+      iframe.style.cssText = 'border:0;border-radius:var(--radius);';
+      iframe.allowFullscreen = true;
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      iframe.title = 'Leelou — 9 rue Gambetta, Sète';
+      placeholder.replaceWith(iframe);
+    });
+  }
+
+  const consent = localStorage.getItem('cookie-consent');
+  if (consent === 'accepted') { loadMap(); return; }
+  if (consent === 'refused')  { return; }
+
+  // Première visite : afficher le bandeau
+  setTimeout(() => banner.classList.add('visible'), 600);
+
+  document.getElementById('cookie-accept').addEventListener('click', () => {
+    localStorage.setItem('cookie-consent', 'accepted');
+    banner.classList.remove('visible');
+    loadMap();
+  });
+  document.getElementById('cookie-refuse').addEventListener('click', () => {
+    localStorage.setItem('cookie-consent', 'refused');
+    banner.classList.remove('visible');
+  });
+
+  // Bouton "Afficher la carte" dans le placeholder
+  document.querySelectorAll('.btn-map-load').forEach(btn => {
+    btn.addEventListener('click', () => {
+      localStorage.setItem('cookie-consent', 'accepted');
+      banner.classList.remove('visible');
+      loadMap();
+    });
+  });
+})();
+
 // ---------- INDICATEUR OUVERT / FERMÉ ----------
 (function() {
   const now  = new Date();
@@ -95,10 +144,11 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 // ---------- HEADER SCROLL ----------
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
-  header.style.boxShadow = window.scrollY > 40
-    ? '0 2px 16px rgba(0,0,0,0.10)'
-    : 'none';
-});
+  const scrolled = window.scrollY > 60;
+  header.style.boxShadow    = scrolled ? '0 2px 16px rgba(0,0,0,0.10)' : 'none';
+  header.style.background   = scrolled ? 'rgba(250,247,245,0.98)' : 'rgba(250,247,245,0.95)';
+  header.style.borderBottom = scrolled ? '1px solid #d4b8a0' : '1px solid #e8d8cc';
+}, { passive: true });
 
 // ---------- NAV ACTIVE AU SCROLL ----------
 const sections = document.querySelectorAll('section[id]');
@@ -189,22 +239,19 @@ document.querySelectorAll('.galerie-item img').forEach(img => {
   });
 });
 
-// ---------- GALERIE ATELIER — boucle infinie CSS ----------
-(function() {
-  const track = document.querySelector('#galerieStripAt .gstrack');
+// ---------- GALERIES — boucle infinie CSS (Atelier + Bistrot) ----------
+document.querySelectorAll('.galerie-strip-at').forEach(strip => {
+  const track = strip.querySelector('.gstrack');
   if (!track) return;
 
-  // Duplicate all images so the CSS animation can loop seamlessly (-50%)
   Array.from(track.querySelectorAll('img')).forEach(img => {
     track.appendChild(img.cloneNode(true));
   });
 
-  // Pause on touch, resume after 2s
-  const strip = track.parentElement;
   strip.addEventListener('touchstart', () => {
     strip.classList.add('touch-paused');
   }, { passive: true });
   strip.addEventListener('touchend', () => {
     setTimeout(() => strip.classList.remove('touch-paused'), 2000);
   }, { passive: true });
-})();
+});

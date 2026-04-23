@@ -1033,40 +1033,69 @@ section { padding: 5rem 0; }
 
 /* Taches aquarelle en surimpression */
 .hero-at-blobs { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+@keyframes blobFloat1 {
+  0%,100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(3%, 5%) scale(1.06); }
+  66%      { transform: translate(-4%, 2%) scale(0.96); }
+}
+@keyframes blobFloat2 {
+  0%,100% { transform: translate(0, 0) scale(1); }
+  40%      { transform: translate(-5%, -4%) scale(1.08); }
+  70%      { transform: translate(3%, -2%) scale(0.94); }
+}
+@keyframes blobFloat3 {
+  0%,100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(6%, 4%) scale(1.1); }
+}
+@keyframes blobFloat4 {
+  0%,100% { transform: translate(0, 0); }
+  45%      { transform: translate(-4%, -6%); }
+}
+@keyframes blobFloat5 {
+  0%,100% { transform: translate(0, 0) scale(1); }
+  60%      { transform: translate(5%, -5%) scale(1.12); }
+}
+
 .blob {
   position: absolute;
   border-radius: 50%;
   filter: blur(48px);
+  will-change: transform;
 }
 .blob-1 {
   width: 50vw; height: 50vw;
   top: -5%; left: -5%;
   background: #bf6040;
   opacity: 0.45;
+  animation: blobFloat1 18s ease-in-out infinite;
 }
 .blob-2 {
   width: 40vw; height: 40vw;
   bottom: -8%; right: -5%;
   background: #f4a8c0;
   opacity: 0.50;
+  animation: blobFloat2 22s ease-in-out infinite;
 }
 .blob-3 {
   width: 32vw; height: 32vw;
   top: 5%; right: 10%;
   background: #7a8c5c;
   opacity: 0.20;
+  animation: blobFloat3 26s ease-in-out infinite;
 }
 .blob-4 {
   width: 28vw; height: 28vw;
   bottom: 10%; left: 15%;
   background: #e87060;
   opacity: 0.25;
+  animation: blobFloat4 20s ease-in-out infinite reverse;
 }
 .blob-5 {
   width: 20vw; height: 20vw;
   top: 45%; right: 25%;
   background: #fff0f4;
   opacity: 0.35;
+  animation: blobFloat5 15s ease-in-out infinite;
 }
 
 /* Texte hero atelier sur fond dégradé terracotta */
@@ -1399,4 +1428,100 @@ section { padding: 5rem 0; }
 
   /* Cantine formules */
   .cantine-formula { flex-direction: column; }
+}
+
+/* =============================================
+   RGPD — Bandeau cookies
+   ============================================= */
+.cookie-banner {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 9999;
+  background: var(--brun);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+.cookie-banner.visible { transform: translateY(0); }
+.cookie-banner p { margin: 0; font-size: 0.85rem; line-height: 1.5; flex: 1; }
+.cookie-banner a { color: var(--rose-light, #f4bfce); }
+.cookie-actions { display: flex; gap: 0.8rem; flex-shrink: 0; }
+.btn-cookie {
+  padding: 0.55rem 1.2rem;
+  border-radius: 2rem;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.btn-cookie:hover { opacity: 0.85; }
+.btn-cookie--accept { background: var(--terra); color: #fff; }
+.btn-cookie--refuse { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.4); }
+
+/* =============================================
+   RGPD — Placeholder Google Maps
+   ============================================= */
+.map-placeholder {
+  width: 100%;
+  height: 350px;
+  background: var(--creme);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.map-placeholder p { margin: 0; font-size: 1rem; color: var(--brun-light); }
+.map-placeholder-note { font-size: 0.82rem !important; color: var(--gris) !important; }
+.btn-map-load {
+  margin-top: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  background: var(--terra);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-map-load:hover { background: #a05530; }
+
+/* =============================================
+   BOUTON INSTAGRAM
+   ============================================= */
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.3rem;
+  padding: 0.45rem 1rem;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+  border-radius: 2rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.btn-instagram:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn-instagram--footer {
+  margin-top: 0;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.9rem;
 }

@@ -16,6 +16,8 @@
   <!-- Favicon généré depuis le logo -->
   <link rel="icon" type="image/svg+xml" href="logo.svg" />
 
+  <link rel="canonical" href="https://leeloubistrot.com/index.html" />
+  <link rel="preload" as="image" href="images/interieur.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200;300;400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
@@ -336,30 +338,17 @@
     <div class="container">
       <span class="section-label">En images</span>
       <h2>La Galerie</h2>
-      <!-- Grille desktop -->
-      <div class="galerie-grid">
-        <div class="galerie-item"><img src="images/plat1.jpg" alt="Maquereau rôti, aubergines confites, framboises" loading="lazy" /></div>
-        <div class="galerie-item"><img src="images/plat2.jpg" alt="Mijoté de bœuf aux légumes de saison" loading="lazy" /></div>
-        <div class="galerie-item"><img src="images/plat3.jpg" alt="Chou à la crème pralinée — pâtisserie maison" loading="lazy" /></div>
-        <div class="galerie-item"><img src="images/plat4.jpg" alt="Duo d'assiettes — tarte soufflée et poisson" loading="lazy" /></div>
-        <div class="galerie-item"><img src="images/plat5.jpg" alt="Filet mignon de porc en tagliata" loading="lazy" /></div>
-        <div class="galerie-item"><img src="images/plat6.jpg" alt="Salade carpaccio, roquette, parmesan" loading="lazy" /></div>
-        <div class="galerie-item"><img src="images/plat7.jpg" alt="Table Leelou — ambiance déjeuner" loading="lazy" /></div>
-        <div class="galerie-item galerie-item--large"><img src="images/interieur2.jpg" alt="Vitrine pâtisseries Leelou" loading="lazy" /></div>
-      </div>
-      <!-- Carrousel mobile -->
-      <div class="galerie-carousel">
-        <div class="carousel-track" id="carouselTrack">
-          <div class="carousel-slide"><img src="images/plat1.jpg" alt="Maquereau rôti" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="images/plat2.jpg" alt="Mijoté de bœuf" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="images/plat3.jpg" alt="Pâtisserie maison" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="images/plat4.jpg" alt="Tarte soufflée et poisson" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="images/plat5.jpg" alt="Filet mignon" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="images/plat6.jpg" alt="Salade carpaccio" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="images/plat7.jpg" alt="Ambiance déjeuner" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="images/interieur2.jpg" alt="Vitrine pâtisseries" loading="lazy" /></div>
-        </div>
-        <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+    <div class="galerie-strip-at" id="galerieStripBistrot">
+      <div class="gstrack">
+        <img src="images/plat1.jpg" alt="Maquereau rôti, aubergines confites, framboises" />
+        <img src="images/plat2.jpg" alt="Mijoté de bœuf aux légumes de saison" />
+        <img src="images/plat3.jpg" alt="Chou à la crème pralinée — pâtisserie maison" />
+        <img src="images/plat4.jpg" alt="Duo d'assiettes — tarte soufflée et poisson" />
+        <img src="images/plat5.jpg" alt="Filet mignon de porc en tagliata" />
+        <img src="images/plat6.jpg" alt="Salade carpaccio, roquette, parmesan" />
+        <img src="images/plat7.jpg" alt="Table Leelou — ambiance déjeuner" />
+        <img src="images/interieur2.jpg" alt="Vitrine pâtisseries Leelou" />
       </div>
     </div>
   </section>
@@ -461,7 +450,10 @@
             <span class="contact-icon">📸</span>
             <div>
               <strong>Instagram</strong>
-              <p><a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
+              <a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener" class="btn-instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                @leeloubistrot
+              </a>
             </div>
           </div>
         </div>
@@ -494,16 +486,11 @@
           </form>
 
           <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.123!2d3.6929!3d43.4053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b10b1e1b1b1b1b%3A0x1!2s9+Rue+Gambetta%2C+34200+S%C3%A8te%2C+France!5e0!3m2!1sfr!2sfr!4v1714000000000"
-            width="100%"
-            height="350"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Leelou Bistrot — 9 rue Gambetta, Sète">
-          </iframe>
+            <div class="map-placeholder" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.123!2d3.6929!3d43.4053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b10b1e1b1b1b1b%3A0x1!2s9+Rue+Gambetta%2C+34200+S%C3%A8te%2C+France!5e0!3m2!1sfr!2sfr!4v1714000000000">
+              <p>🗺️ Carte désactivée</p>
+              <p class="map-placeholder-note">Acceptez les cookies pour afficher Google Maps.</p>
+              <button class="btn-map-load">Afficher la carte</button>
+            </div>
           </div>
         </div>
       </div>
@@ -531,7 +518,10 @@
           <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
         </svg>
       <p>9 rue Gambetta · 34200 Sète · <a href="tel:0499026993">04 99 02 69 93</a></p>
-      <p><a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
+      <a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener" class="btn-instagram btn-instagram--footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @leeloubistrot
+      </a>
       <p class="footer-copy">© 2026 Leelou Bistrot & Gourmandises — Tous droits réservés · <a href="atelier.html">🎨 Atelier Création</a> · <a href="mentions-legales.html">Mentions légales</a></p>
     </div>
   </footer>
@@ -544,6 +534,15 @@
     <span class="btn-float__icon">📞</span>
     <span class="btn-float__text">Appeler</span>
   </a>
+
+  <!-- Bandeau RGPD -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consentement cookies">
+    <p>🍪 Ce site utilise Google Maps et Google Fonts. En acceptant, vous consentez au dépôt de cookies par Google. <a href="mentions-legales.html">En savoir plus</a>.</p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn-cookie btn-cookie--accept">Accepter</button>
+      <button id="cookie-refuse" class="btn-cookie btn-cookie--refuse">Refuser</button>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
