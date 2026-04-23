@@ -1119,27 +1119,36 @@ section { padding: 5rem 0; }
 #galerie-at { padding-bottom: 0; }
 .galerie-strip-at {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  gap: 6px;
+  gap: 8px;
+  padding: 0 1.5rem 1.5rem;
   margin-top: 2rem;
   cursor: grab;
+  width: 100%;
+  box-sizing: border-box;
 }
 .galerie-strip-at::-webkit-scrollbar { display: none; }
 .galerie-strip-at.dragging { cursor: grabbing; }
 .galerie-strip-at img {
-  height: clamp(240px, 42vw, 480px);
-  width: clamp(180px, 30vw, 360px);
-  flex-shrink: 0;
-  object-fit: cover;
-  scroll-snap-align: start;
   display: block;
+  height: 400px;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+  scroll-snap-align: start;
+  border-radius: 6px;
   transition: opacity 0.2s;
-  border-radius: 4px;
 }
-.galerie-strip-at img:hover { opacity: 0.88; cursor: zoom-in; }
+.galerie-strip-at img:hover { opacity: 0.88; }
 
 /* ---------- ACTIVITÉS ---------- */
 .activites-grid {
@@ -1308,8 +1317,10 @@ section { padding: 5rem 0; }
 
   /* ---------- GALERIE ATELIER strip ---------- */
   .galerie-strip-at img {
-    height: clamp(180px, 52vw, 320px);
-    width:  clamp(150px, 40vw, 260px);
+    height: 280px;
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
   }
 
   /* ---------- HORAIRES ---------- */
@@ -1373,7 +1384,9 @@ section { padding: 5rem 0; }
   /* Galerie atelier strip : images plus larges */
   .galerie-strip-at img {
     height: 220px;
-    width: 75vw;
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
   }
 
   /* Formulaire */
