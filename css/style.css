@@ -1130,15 +1130,16 @@ section { padding: 5rem 0; }
 .galerie-strip-at::-webkit-scrollbar { display: none; }
 .galerie-strip-at.dragging { cursor: grabbing; }
 .galerie-strip-at img {
-  height: clamp(220px, 40vw, 480px);
-  width: auto;
+  height: clamp(240px, 42vw, 480px);
+  width: clamp(180px, 30vw, 360px);
   flex-shrink: 0;
   object-fit: cover;
   scroll-snap-align: start;
   display: block;
   transition: opacity 0.2s;
+  border-radius: 4px;
 }
-.galerie-strip-at img:hover { opacity: 0.92; }
+.galerie-strip-at img:hover { opacity: 0.88; cursor: zoom-in; }
 
 /* ---------- ACTIVITÉS ---------- */
 .activites-grid {
