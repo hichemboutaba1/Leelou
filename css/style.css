@@ -157,6 +157,29 @@ h3 {
 }
 .nav-atelier:hover { background: var(--olive); color: #fff !important; }
 
+/* ---------- BOUTON BASCULE BISTROT ↔ ATELIER ---------- */
+.hero-switch-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.8rem;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  border-radius: 50px;
+  color: rgba(255,255,255,0.9);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--transition);
+  backdrop-filter: blur(4px);
+  background: rgba(255,255,255,0.08);
+}
+.hero-switch-btn:hover {
+  background: rgba(255,255,255,0.22);
+  border-color: #fff;
+  color: #fff;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
