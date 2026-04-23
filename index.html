@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leelou — Bistrot & Gourmandises · Sète</title>
+  <meta name="description" content="Leelou Bistrot & Gourmandises à Sète. Cuisine de saison, pâtisseries maison, ambiance méditerranéenne. 9 rue Gambetta, 34200 Sète." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200;300;400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.svg" alt="Leelou Bistrot & Gourmandises" />
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#menu">La Carte</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#horaires">Horaires</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="logo.svg" alt="Leelou" class="hero-logo" />
+      <p class="hero-tagline">Bistrot & Gourmandises · Sète</p>
+      <p class="hero-sub">Cuisine de saison, pâtisseries maison, saveurs méditerranéennes</p>
+      <div class="hero-actions">
+        <a href="tel:0499026993" class="btn btn-primary">Nous appeler</a>
+        <a href="#menu" class="btn btn-secondary">Voir la carte</a>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- ========== À PROPOS ========== -->
+  <section id="apropos">
+    <div class="container">
+      <div class="apropos-grid">
+        <div class="apropos-text">
+          <span class="section-label">Notre histoire</span>
+          <h2>Un bistrot au cœur de Sète</h2>
+          <p>Niché au 9 rue Gambetta, Leelou vous accueille dans un cadre chaleureux et lumineux. Ici, on cuisine avec passion des produits frais de saison, on prépare des pâtisseries maison et on vous propose une sélection de vins de la région.</p>
+          <p>Une adresse conviviale où chaque repas est une parenthèse de gourmandise, dans l'esprit méditerranéen qui fait le charme de Sète.</p>
+        </div>
+        <div class="apropos-image">
+          <img src="images/interieur.jpg" alt="Intérieur Leelou Bistrot" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU / CARTE ========== -->
+  <section id="menu">
+    <div class="container">
+      <span class="section-label">Nos saveurs</span>
+      <h2>La Carte</h2>
+
+      <!-- Onglets menu -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="dejeuner">Déjeuner</button>
+        <button class="tab-btn" data-tab="cantine">La Cantine</button>
+        <button class="tab-btn" data-tab="boissons">Boissons</button>
+        <button class="tab-btn" data-tab="vins">Vins</button>
+      </div>
+
+      <!-- Déjeuner -->
+      <div class="tab-content active" id="tab-dejeuner">
+        <div class="menu-grid">
+          <div class="menu-category">
+            <h3>Entrées & Plats</h3>
+            <ul class="menu-list">
+              <li><span class="dish-name">Soupe froide pastèque, tomate, concombre, crumble de parmesan</span><span class="dish-price">8€</span></li>
+              <li><span class="dish-name">Salade pousse d'épinard, fraises, tomate, chèvre frais, amandes effilées</span><span class="dish-price">10€</span></li>
+              <li><span class="dish-name">Tomates tricolores du paysan, mozzarella di bufalla, pesto vert, roquette</span><span class="dish-price">10€ / 15€</span></li>
+              <li><span class="dish-name">Pêche du jour en filet aïoli, légumes de saison, œuf dur</span><span class="dish-price">20€</span></li>
+              <li><span class="dish-name">Taggliata tendre de filet de bœuf, roquette, pesto</span><span class="dish-price">22€</span></li>
+              <li><span class="dish-name">Carpaccio XL de bœuf, pommes sautées, roquette, parmesan</span><span class="dish-price">20€</span></li>
+              <li><span class="dish-name">Tarte repas soufflée, salade — recette végétarienne</span><span class="dish-price">15€</span></li>
+              <li><span class="dish-name">Suggestion de la semaine (selon arrivage)</span><span class="dish-price">23€</span></li>
+            </ul>
+          </div>
+          <div class="menu-category">
+            <h3>Desserts</h3>
+            <ul class="menu-list">
+              <li><span class="dish-name">Pâtisseries maisons — consultez notre vitrine</span><span class="dish-price">à la carte</span></li>
+            </ul>
+            <div class="menu-note">La carte évolue au fil des saisons et des arrivages.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- La Cantine -->
+      <div class="tab-content" id="tab-cantine">
+        <div class="cantine-block">
+          <h3>La Cantine de Leelou</h3>
+          <p class="cantine-desc">Du mardi au vendredi — hors week-end et jours fériés</p>
+          <div class="cantine-formula">
+            <div class="formula-card">
+              <div class="formula-price">20€</div>
+              <div class="formula-label">Plat + Dessert + Café</div>
+            </div>
+            <div class="formula-card">
+              <div class="formula-price">16€</div>
+              <div class="formula-label">Plat unique</div>
+            </div>
+          </div>
+          <ul class="menu-list">
+            <li><span class="dish-name">Un plat qui change toutes les semaines !</span></li>
+            <li><span class="dish-name">Dessert signature : Tarte citron meringuée</span></li>
+          </ul>
+          <div class="menu-note">Formule déjeuner disponible également : Entrée+Plat ou Plat+Dessert 16,90€ — Entrée+Plat+Dessert 20,90€</div>
+        </div>
+      </div>
+
+      <!-- Boissons -->
+      <div class="tab-content" id="tab-boissons">
+        <div class="menu-grid">
+          <div class="menu-category">
+            <h3>Eaux & Sodas</h3>
+            <ul class="menu-list">
+              <li><span class="dish-name">Perrier fines bulles 50cl / 1L</span><span class="dish-price">4,90€ / 8,50€</span></li>
+              <li><span class="dish-name">Vittel 50cl</span><span class="dish-price">4,90€</span></li>
+              <li><span class="dish-name">Coca-Cola / Zero 33cl</span><span class="dish-price">3,50€</span></li>
+              <li><span class="dish-name">Lim'O Limonade Bio (Framboise-Hibiscus, Myrtille) 33cl</span><span class="dish-price">3,80€</span></li>
+              <li><span class="dish-name">Jus Verger de Thau 100% pur jus 25cl</span><span class="dish-price">3,50€</span></li>
+              <li><span class="dish-name">Citronnade Bio maison 50cl</span><span class="dish-price">4,50€</span></li>
+              <li><span class="dish-name">Thé glacé maison 50cl</span><span class="dish-price">4,00€</span></li>
+            </ul>
+          </div>
+          <div class="menu-category">
+            <h3>Boissons Chaudes</h3>
+            <ul class="menu-list">
+              <li><span class="dish-name">Expresso / Allongé / Serré / Décaféiné</span><span class="dish-price">1,80€</span></li>
+              <li><span class="dish-name">Noisette (expresso + mousse de lait)</span><span class="dish-price">1,90€</span></li>
+              <li><span class="dish-name">Double expresso</span><span class="dish-price">3,00€</span></li>
+              <li><span class="dish-name">Café Viennois</span><span class="dish-price">3,00€</span></li>
+              <li><span class="dish-name">Latté (grand crème)</span><span class="dish-price">3,50€</span></li>
+              <li><span class="dish-name">Cappuccino</span><span class="dish-price">3,50€</span></li>
+              <li><span class="dish-name">Chocolat chaud à l'ancienne</span><span class="dish-price">5,00€</span></li>
+              <li><span class="dish-name">Thés Palais des Thés (noirs, verts, rooibos, infusions)</span><span class="dish-price">4,00€</span></li>
+            </ul>
+          </div>
+          <div class="menu-category">
+            <h3>Apéritifs</h3>
+            <ul class="menu-list">
+              <li><span class="dish-name">Kir vin blanc (cassis, violette, fraise, pêche) 10cl</span><span class="dish-price">4,00€</span></li>
+              <li><span class="dish-name">Ricard 4cl</span><span class="dish-price">3,00€</span></li>
+              <li><span class="dish-name">Muscat de Frontignan 10cl</span><span class="dish-price">3,00€</span></li>
+              <li><span class="dish-name">Bière Kiss'Wings Blonde/Blanche Bio 33cl</span><span class="dish-price">4,70€</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vins -->
+      <div class="tab-content" id="tab-vins">
+        <div class="menu-grid">
+          <div class="menu-category">
+            <h3>Vins au Verre</h3>
+            <p class="menu-subtitle">Domaine Le Clos Rivieral · Famille Valery · Massillan — Languedoc</p>
+            <ul class="menu-list">
+              <li><span class="dish-name">Rouge / Rosé / Blanc Bio — verre 12cl</span><span class="dish-price">3,70€</span></li>
+              <li><span class="dish-name">1/4 de vin 20cl</span><span class="dish-price">6,00€</span></li>
+              <li><span class="dish-name">1/2 de vin 37,5cl</span><span class="dish-price">9,00€</span></li>
+              <li><span class="dish-name">Vendanges Oubliées 2015 — Blanc Liquoreux 6cl</span><span class="dish-price">4,00€</span></li>
+            </ul>
+          </div>
+          <div class="menu-category">
+            <h3>Vins en Bouteilles</h3>
+            <ul class="menu-list wine-list">
+              <li>
+                <span class="dish-name">Merlot 2016 — Rouge <em>Arômes cerise et mûre</em></span>
+                <span class="dish-price">16,50€</span>
+              </li>
+              <li>
+                <span class="dish-name">Soirs Illuminés Bio 2014 — Rouge <em>Rond, élégant, tanins présents</em></span>
+                <span class="dish-price">24,80€</span>
+              </li>
+              <li>
+                <span class="dish-name">Domaine de Montcalm Bio 2019 — Rosé <em>Notes souples, gris saumonée</em></span>
+                <span class="dish-price">19,80€</span>
+              </li>
+              <li>
+                <span class="dish-name">Domaine Reine Juliette 2021 — Blanc AOP Picpoul <em>Notes citronnées, iodées</em></span>
+                <span class="dish-price">19,80€</span>
+              </li>
+            </ul>
+            <div class="menu-note">Les boissons alcoolisées sont servies uniquement lors d'un repas complet.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== GALERIE ========== -->
+  <section id="galerie">
+    <div class="container">
+      <span class="section-label">En images</span>
+      <h2>La Galerie</h2>
+      <div class="galerie-grid">
+        <div class="galerie-item"><img src="images/plat1.jpg" alt="Maquereau rôti, aubergines confites, framboises" /></div>
+        <div class="galerie-item"><img src="images/plat2.jpg" alt="Mijoté de bœuf aux légumes de saison" /></div>
+        <div class="galerie-item"><img src="images/plat3.jpg" alt="Chou à la crème pralinée — pâtisserie maison" /></div>
+        <div class="galerie-item"><img src="images/plat4.jpg" alt="Tarte soufflée et poisson du jour" /></div>
+        <div class="galerie-item"><img src="images/plat5.jpg" alt="Filet mignon de porc en tagliata" /></div>
+        <div class="galerie-item galerie-item--large"><img src="images/interieur.jpg" alt="Intérieur Leelou Bistrot — vitrine pâtisseries" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HORAIRES ========== -->
+  <section id="horaires">
+    <div class="container">
+      <span class="section-label">Quand nous rendre visite</span>
+      <h2>Horaires d'ouverture</h2>
+      <div class="horaires-grid">
+
+        <div class="horaires-card">
+          <h3>Leelou</h3>
+          <ul>
+            <li><span>Mercredi – Vendredi</span><span>10h – 18h</span></li>
+            <li><span>Samedi</span><span>9h – 18h</span></li>
+            <li><span>Dimanche</span><span>9h – 15h</span></li>
+            <li class="fermé"><span>Lundi – Mardi</span><span>Fermé</span></li>
+          </ul>
+        </div>
+
+        <div class="horaires-card">
+          <h3>Petit-déjeuner</h3>
+          <ul>
+            <li><span>Mercredi – Samedi</span><span>10h – 12h</span></li>
+            <li><span>Mardi</span><span>10h – 12h</span></li>
+            <li class="fermé"><span>Dimanche – Lundi</span><span>Fermé</span></li>
+          </ul>
+        </div>
+
+        <div class="horaires-card">
+          <h3>Déjeuner</h3>
+          <ul>
+            <li><span>Mercredi – Samedi</span><span>12h – 15h</span></li>
+            <li><span>Mardi</span><span>12h – 15h</span></li>
+            <li class="fermé"><span>Dimanche – Lundi</span><span>Fermé</span></li>
+          </ul>
+        </div>
+
+        <div class="horaires-card">
+          <h3>Brunch</h3>
+          <ul>
+            <li><span>Dimanche</span><span>9h – 17h</span></li>
+            <li class="fermé"><span>Lundi – Samedi</span><span>Fermé</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-label">Nous trouver</span>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Adresse</strong>
+              <p>9 rue Gambetta<br />34200 Sète</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Téléphone</strong>
+              <p><a href="tel:0499026993">04 99 02 69 93</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:sete@leeloubistrot.com">sete@leeloubistrot.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📸</span>
+            <div>
+              <strong>Instagram</strong>
+              <p><a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.0!2d3.6976!3d43.4048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b10b3c6a3b0001%3A0x1!2s9+Rue+Gambetta%2C+34200+S%C3%A8te!5e0!3m2!1sfr!2sfr!4v1"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Leelou Bistrot — 9 rue Gambetta, Sète">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <img src="logo.svg" alt="Leelou" class="footer-logo" />
+      <p>9 rue Gambetta · 34200 Sète · <a href="tel:0499026993">04 99 02 69 93</a></p>
+      <p><a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
+      <p class="footer-copy">© 2025 Leelou Bistrot & Gourmandises — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
