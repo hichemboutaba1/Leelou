@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leelou — Bistrot & Gourmandises · Sète</title>
   <meta name="description" content="Leelou Bistrot & Gourmandises à Sète. Cuisine de saison, pâtisseries maison, ambiance méditerranéenne. 9 rue Gambetta, 34200 Sète." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Leelou — Bistrot & Gourmandises · Sète" />
+  <meta property="og:description" content="Cuisine de saison, pâtisseries maison et saveurs méditerranéennes au cœur de Sète." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:image" content="images/interieur.jpg" />
+
+  <!-- Favicon généré depuis le logo -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+  <link rel="canonical" href="https://leeloubistrot.com/index.html" />
+  <link rel="preload" as="image" href="images/interieur.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@200;300;400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
@@ -17,7 +30,7 @@
     "@type": "Restaurant",
     "name": "Leelou Bistrot & Gourmandises",
     "image": "images/interieur.jpg",
-    "url": "",
+    "url": "https://leeloubistrot.com",
     "telephone": "+33499026993",
     "email": "sete@leeloubistrot.com",
     "address": {
@@ -40,8 +53,7 @@
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday",  "opens": "10:00", "closes": "18:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",    "opens": "10:00", "closes": "18:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday",  "opens": "09:00", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday",    "opens": "09:00", "closes": "15:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",   "opens": "10:00", "closes": "18:00" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday",    "opens": "09:00", "closes": "15:00" }
     ]
   }
   </script>
@@ -51,15 +63,33 @@
   <!-- ========== HEADER / NAV ========== -->
   <header id="header">
     <nav class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <img src="logo.svg" alt="Leelou Bistrot & Gourmandises" />
+      <a href="#hero" class="nav-logo" aria-label="Leelou Bistrot & Gourmandises">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--nav">
+          <defs>
+            <path id="topArc-nav" d="M 62,250 A 188,188 0 0,1 438,250"/>
+            <clipPath id="circleClip-nav"><circle cx="250" cy="250" r="238"/></clipPath>
+          </defs>
+          <circle cx="250" cy="250" r="245" fill="#faf7f5"/><circle cx="250" cy="250" r="240" fill="white"/><circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+          <g clip-path="url(#circleClip-nav)">
+            <ellipse cx="90" cy="365" rx="30" ry="10" fill="#7ec8b0" opacity="0.55" transform="rotate(40,90,365)"/><ellipse cx="108" cy="385" rx="26" ry="9" fill="#90d0b8" opacity="0.50" transform="rotate(58,108,385)"/><ellipse cx="75" cy="382" rx="24" ry="8" fill="#6dbaa5" opacity="0.52" transform="rotate(22,75,382)"/><ellipse cx="408" cy="362" rx="28" ry="9" fill="#7ec8b0" opacity="0.55" transform="rotate(-42,408,362)"/><ellipse cx="392" cy="382" rx="24" ry="8" fill="#90d0b8" opacity="0.50" transform="rotate(-60,392,382)"/>
+            <g opacity="0.80"><ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/><ellipse cx="155" cy="373" rx="40" ry="32" fill="#f4bfce" transform="rotate(12,155,373)"/><ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/><ellipse cx="156" cy="376" rx="22" ry="17" fill="#fae3ea" transform="rotate(22,156,376)"/><circle cx="156" cy="377" r="5" fill="#eba8c0" opacity="0.6"/></g>
+            <g opacity="0.75"><ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/><ellipse cx="252" cy="388" rx="36" ry="29" fill="#f2b8ca" transform="rotate(-22,252,388)"/><ellipse cx="254" cy="389" rx="27" ry="22" fill="#f6cdd8" transform="rotate(14,254,389)"/><circle cx="253" cy="390" r="6" fill="#e898b5" opacity="0.65"/></g>
+            <g opacity="0.72"><ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/><ellipse cx="345" cy="376" rx="34" ry="27" fill="#f4c2d0" transform="rotate(-12,345,376)"/><ellipse cx="347" cy="377" rx="25" ry="20" fill="#f7d3dc" transform="rotate(7,347,377)"/><circle cx="346" cy="378" r="5" fill="#eca5be" opacity="0.6"/></g>
+          </g>
+          <text font-family="'Josefin Sans', 'Century Gothic', sans-serif" font-size="17" letter-spacing="4" fill="#3a2215" font-weight="300"><textPath href="#topArc-nav" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath></text>
+          <path d="M 108,258 C 115,242 130,240 140,253 C 150,266 142,278 136,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M 392,258 C 385,242 370,240 360,253 C 350,266 358,278 364,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
+        </svg>
       </a>
-      <button class="nav-toggle" aria-label="Menu">
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+      <div id="status-badge" class="status-badge"></div>
       <ul class="nav-links">
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#menu">La Carte</a></li>
+        <li><a href="#brunch">Brunch</a></li>
         <li><a href="#galerie">Galerie</a></li>
         <li><a href="#horaires">Horaires</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -69,15 +99,34 @@
   </header>
 
   <!-- ========== HERO ========== -->
-  <section id="hero">
+  <section id="hero" style="background-image: url('images/interieur.jpg')">
     <div class="hero-content">
-      <img src="logo.svg" alt="Leelou" class="hero-logo" />
-      <p class="hero-tagline">Bistrot & Gourmandises · Sète</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--hero" aria-label="Leelou">
+          <defs>
+            <path id="topArc-hero" d="M 62,250 A 188,188 0 0,1 438,250"/>
+            <clipPath id="circleClip-hero"><circle cx="250" cy="250" r="238"/></clipPath>
+          </defs>
+          <circle cx="250" cy="250" r="245" fill="#faf7f5"/><circle cx="250" cy="250" r="240" fill="white"/><circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+          <g clip-path="url(#circleClip-hero)">
+            <ellipse cx="90" cy="365" rx="30" ry="10" fill="#7ec8b0" opacity="0.55" transform="rotate(40,90,365)"/><ellipse cx="108" cy="385" rx="26" ry="9" fill="#90d0b8" opacity="0.50" transform="rotate(58,108,385)"/><ellipse cx="75" cy="382" rx="24" ry="8" fill="#6dbaa5" opacity="0.52" transform="rotate(22,75,382)"/><ellipse cx="408" cy="362" rx="28" ry="9" fill="#7ec8b0" opacity="0.55" transform="rotate(-42,408,362)"/><ellipse cx="392" cy="382" rx="24" ry="8" fill="#90d0b8" opacity="0.50" transform="rotate(-60,392,382)"/>
+            <g opacity="0.80"><ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/><ellipse cx="155" cy="373" rx="40" ry="32" fill="#f4bfce" transform="rotate(12,155,373)"/><ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/><ellipse cx="156" cy="376" rx="22" ry="17" fill="#fae3ea" transform="rotate(22,156,376)"/><circle cx="156" cy="377" r="5" fill="#eba8c0" opacity="0.6"/></g>
+            <g opacity="0.75"><ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/><ellipse cx="252" cy="388" rx="36" ry="29" fill="#f2b8ca" transform="rotate(-22,252,388)"/><ellipse cx="254" cy="389" rx="27" ry="22" fill="#f6cdd8" transform="rotate(14,254,389)"/><circle cx="253" cy="390" r="6" fill="#e898b5" opacity="0.65"/></g>
+            <g opacity="0.72"><ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/><ellipse cx="345" cy="376" rx="34" ry="27" fill="#f4c2d0" transform="rotate(-12,345,376)"/><ellipse cx="347" cy="377" rx="25" ry="20" fill="#f7d3dc" transform="rotate(7,347,377)"/><circle cx="346" cy="378" r="5" fill="#eca5be" opacity="0.6"/></g>
+          </g>
+          <text font-family="'Josefin Sans', 'Century Gothic', sans-serif" font-size="17" letter-spacing="4" fill="#3a2215" font-weight="300"><textPath href="#topArc-hero" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath></text>
+          <path d="M 108,258 C 115,242 130,240 140,253 C 150,266 142,278 136,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M 392,258 C 385,242 370,240 360,253 C 350,266 358,278 364,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
+        </svg>
+      <h1 class="hero-tagline">Leelou — Bistrot & Gourmandises · Sète</h1>
       <p class="hero-sub">Cuisine de saison, pâtisseries maison, saveurs méditerranéennes</p>
       <div class="hero-actions">
         <a href="tel:0499026993" class="btn btn-primary">Nous appeler</a>
         <a href="#menu" class="btn btn-secondary">Voir la carte</a>
       </div>
+      <a href="atelier.html" class="hero-switch-btn">
+        🎨 Découvrir l'Atelier Création →
+      </a>
     </div>
     <div class="hero-overlay"></div>
   </section>
@@ -93,7 +142,28 @@
           <p>Une adresse conviviale où chaque repas est une parenthèse de gourmandise, dans l'esprit méditerranéen qui fait le charme de Sète.</p>
         </div>
         <div class="apropos-image">
-          <img src="images/interieur.jpg" alt="Intérieur Leelou Bistrot" />
+          <img src="images/interieur.jpg" alt="Intérieur Leelou Bistrot" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PETIT-DÉJEUNER ========== -->
+  <section id="petitdej">
+    <div class="container">
+      <div class="petitdej-grid">
+        <div class="petitdej-text">
+          <span class="section-label">Chaque matin</span>
+          <h2>Le Petit-déjeuner</h2>
+          <p>Commencez la journée en douceur chez Leelou. Café, thé, chocolat chaud, viennoiseries et pâtisseries maison vous attendent dans un cadre lumineux et chaleureux.</p>
+          <div class="petitdej-horaires">
+            <div class="petitdej-slot">
+              <span>Mer – Sam</span><span>10h – 12h</span>
+            </div>
+          </div>
+        </div>
+        <div class="petitdej-image">
+          <img src="images/plat3.jpg" alt="Petit-déjeuner Leelou — pâtisseries maison" loading="lazy" />
         </div>
       </div>
     </div>
@@ -243,18 +313,73 @@
     </div>
   </section>
 
+  <!-- ========== BRUNCH ========== -->
+  <section id="brunch">
+    <div class="container">
+
+      <div class="brunch-intro">
+        <span class="section-label">Événement mensuel</span>
+        <h2>Le Brunch de Leelou</h2>
+        <p class="brunch-subtitle">Chaque <strong>dernier dimanche du mois</strong>, de 9h à 15h — une table généreuse et gourmande dans l'esprit méditerranéen.</p>
+      </div>
+
+      <div class="brunch-next-badge">
+        <span class="brunch-next-label">Prochain brunch</span>
+        <strong id="prochain-brunch-date" class="brunch-next-date-text">—</strong>
+        <span class="brunch-next-time">9h → 15h</span>
+      </div>
+
+      <div class="brunch-grid">
+        <div class="brunch-image">
+          <img src="images/plat3.jpg" alt="Brunch gourmand Leelou — pâtisseries et plats du dimanche" loading="lazy" />
+        </div>
+        <div class="brunch-text">
+          <div class="brunch-menu">
+            <div class="brunch-menu-col">
+              <h4>Sucré</h4>
+              <ul>
+                <li>Viennoiseries &amp; pâtisseries maison</li>
+                <li>Pain, beurre &amp; confitures artisanales</li>
+                <li>Granola, fruits de saison</li>
+              </ul>
+            </div>
+            <div class="brunch-menu-col">
+              <h4>Salé &amp; Boissons</h4>
+              <ul>
+                <li>Œufs brouillés à la crème</li>
+                <li>Charcuterie &amp; fromages</li>
+                <li>Café, thé, chocolat, jus frais</li>
+              </ul>
+            </div>
+          </div>
+          <div class="brunch-horaire">
+            <span class="brunch-day">Dernier dim. du mois</span>
+            <span class="brunch-time">9h00 — 15h00</span>
+          </div>
+          <p class="brunch-instagram-note">Menu complet &amp; infos sur <a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
+          <a href="tel:0499026993" class="btn btn-brunch">Réserver · 04 99 02 69 93</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ========== GALERIE ========== -->
   <section id="galerie">
     <div class="container">
       <span class="section-label">En images</span>
       <h2>La Galerie</h2>
-      <div class="galerie-grid">
-        <div class="galerie-item"><img src="images/plat1.jpg" alt="Maquereau rôti, aubergines confites, framboises" /></div>
-        <div class="galerie-item"><img src="images/plat2.jpg" alt="Mijoté de bœuf aux légumes de saison" /></div>
-        <div class="galerie-item"><img src="images/plat3.jpg" alt="Chou à la crème pralinée — pâtisserie maison" /></div>
-        <div class="galerie-item"><img src="images/plat4.jpg" alt="Tarte soufflée et poisson du jour" /></div>
-        <div class="galerie-item"><img src="images/plat5.jpg" alt="Filet mignon de porc en tagliata" /></div>
-        <div class="galerie-item galerie-item--large"><img src="images/interieur.jpg" alt="Intérieur Leelou Bistrot — vitrine pâtisseries" /></div>
+    </div>
+    <div class="galerie-strip-at" id="galerieStripBistrot">
+      <div class="gstrack">
+        <img src="images/plat1.jpg" alt="Maquereau rôti, aubergines confites, framboises" />
+        <img src="images/plat2.jpg" alt="Mijoté de bœuf aux légumes de saison" />
+        <img src="images/plat3.jpg" alt="Chou à la crème pralinée — pâtisserie maison" />
+        <img src="images/plat4.jpg" alt="Duo d'assiettes — tarte soufflée et poisson" />
+        <img src="images/plat5.jpg" alt="Filet mignon de porc en tagliata" />
+        <img src="images/plat6.jpg" alt="Salade carpaccio, roquette, parmesan" />
+        <img src="images/plat7.jpg" alt="Table Leelou — ambiance déjeuner" />
+        <img src="images/interieur2.jpg" alt="Vitrine pâtisseries Leelou" />
       </div>
     </div>
   </section>
@@ -280,8 +405,7 @@
           <h3>Petit-déjeuner</h3>
           <ul>
             <li><span>Mercredi – Samedi</span><span>10h – 12h</span></li>
-            <li><span>Mardi</span><span>10h – 12h</span></li>
-            <li class="fermé"><span>Dimanche – Lundi</span><span>Fermé</span></li>
+            <li class="fermé"><span>Lundi – Mardi – Dim.</span><span>Fermé</span></li>
           </ul>
         </div>
 
@@ -289,19 +413,38 @@
           <h3>Déjeuner</h3>
           <ul>
             <li><span>Mercredi – Samedi</span><span>12h – 15h</span></li>
-            <li><span>Mardi</span><span>12h – 15h</span></li>
-            <li class="fermé"><span>Dimanche – Lundi</span><span>Fermé</span></li>
+            <li class="fermé"><span>Lundi – Mardi – Dim.</span><span>Fermé</span></li>
           </ul>
         </div>
 
         <div class="horaires-card">
           <h3>Brunch</h3>
           <ul>
-            <li><span>Dimanche</span><span>9h – 17h</span></li>
-            <li class="fermé"><span>Lundi – Samedi</span><span>Fermé</span></li>
+            <li><span>Dernier dim. du mois</span><span>9h – 15h</span></li>
+            <li class="fermé"><span>Autres dimanches</span><span>—</span></li>
           </ul>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AVIS ========== -->
+  <section id="avis">
+    <div class="container">
+      <span class="section-label">Ce qu'ils en disent</span>
+      <h2>Avis clients</h2>
+      <div class="avis-cta-block">
+        <p class="avis-intro">Vous avez aimé votre visite chez Leelou ? Partagez votre expérience sur Google — cela nous aide énormément !</p>
+        <a
+          href="https://www.google.com/search?q=Leelou+Bistrot+Gourmandises+Sète&hl=fr#lrd=0x12b136b62e4a8d55:0x1,1"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-avis"
+        >
+          ⭐ Laisser un avis Google
+        </a>
+        <p class="avis-note">Retrouvez tous nos avis directement sur <a href="https://www.google.com/maps/place/Leelou+Bistrot" target="_blank" rel="noopener">Google Maps</a>.</p>
       </div>
     </div>
   </section>
@@ -338,12 +481,15 @@
             <span class="contact-icon">📸</span>
             <div>
               <strong>Instagram</strong>
-              <p><a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
+              <a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener" class="btn-instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                @leeloubistrot
+              </a>
             </div>
           </div>
         </div>
         <div class="contact-right">
-          <form class="contact-form" id="contactForm" action="mailto:sete@leeloubistrot.com" method="POST" enctype="text/plain">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/sete@leeloubistrot.com" method="POST">
             <h3>Envoyer un message</h3>
             <div class="form-group">
               <label for="nom">Nom</label>
@@ -357,7 +503,7 @@
               <label for="sujet">Sujet</label>
               <select id="sujet" name="sujet">
                 <option value="reservation">Réservation</option>
-                <option value="brunch">Brunch du dimanche</option>
+                <option value="brunch">Brunch — dernier dimanche du mois</option>
                 <option value="info">Renseignement</option>
                 <option value="autre">Autre</option>
               </select>
@@ -370,16 +516,11 @@
           </form>
 
           <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.0!2d3.6976!3d43.4048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b10b3c6a3b0001%3A0x1!2s9+Rue+Gambetta%2C+34200+S%C3%A8te!5e0!3m2!1sfr!2sfr!4v1"
-            width="100%"
-            height="350"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Leelou Bistrot — 9 rue Gambetta, Sète">
-          </iframe>
+            <div class="map-placeholder" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.123!2d3.6929!3d43.4053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b10b1e1b1b1b1b%3A0x1!2s9+Rue+Gambetta%2C+34200+S%C3%A8te%2C+France!5e0!3m2!1sfr!2sfr!4v1714000000000">
+              <p>🗺️ Carte désactivée</p>
+              <p class="map-placeholder-note">Acceptez les cookies pour afficher Google Maps.</p>
+              <button class="btn-map-load">Afficher la carte</button>
+            </div>
           </div>
         </div>
       </div>
@@ -389,12 +530,49 @@
   <!-- ========== FOOTER ========== -->
   <footer id="footer">
     <div class="container footer-inner">
-      <img src="logo.svg" alt="Leelou" class="footer-logo" />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="logo-svg logo-svg--footer" aria-label="Leelou">
+          <defs>
+            <path id="topArc-footer" d="M 62,250 A 188,188 0 0,1 438,250"/>
+            <clipPath id="circleClip-footer"><circle cx="250" cy="250" r="238"/></clipPath>
+          </defs>
+          <circle cx="250" cy="250" r="245" fill="#faf7f5"/><circle cx="250" cy="250" r="240" fill="white"/><circle cx="250" cy="250" r="238" fill="white" stroke="#e8d8cc" stroke-width="1.2"/>
+          <g clip-path="url(#circleClip-footer)">
+            <ellipse cx="90" cy="365" rx="30" ry="10" fill="#7ec8b0" opacity="0.55" transform="rotate(40,90,365)"/><ellipse cx="108" cy="385" rx="26" ry="9" fill="#90d0b8" opacity="0.50" transform="rotate(58,108,385)"/><ellipse cx="75" cy="382" rx="24" ry="8" fill="#6dbaa5" opacity="0.52" transform="rotate(22,75,382)"/><ellipse cx="408" cy="362" rx="28" ry="9" fill="#7ec8b0" opacity="0.55" transform="rotate(-42,408,362)"/><ellipse cx="392" cy="382" rx="24" ry="8" fill="#90d0b8" opacity="0.50" transform="rotate(-60,392,382)"/>
+            <g opacity="0.80"><ellipse cx="155" cy="378" rx="48" ry="40" fill="#f0a8be" transform="rotate(-18,155,378)"/><ellipse cx="155" cy="373" rx="40" ry="32" fill="#f4bfce" transform="rotate(12,155,373)"/><ellipse cx="157" cy="375" rx="32" ry="25" fill="#f7d0dc" transform="rotate(-6,157,375)"/><ellipse cx="156" cy="376" rx="22" ry="17" fill="#fae3ea" transform="rotate(22,156,376)"/><circle cx="156" cy="377" r="5" fill="#eba8c0" opacity="0.6"/></g>
+            <g opacity="0.75"><ellipse cx="252" cy="392" rx="44" ry="36" fill="#eea0ba" transform="rotate(6,252,392)"/><ellipse cx="252" cy="388" rx="36" ry="29" fill="#f2b8ca" transform="rotate(-22,252,388)"/><ellipse cx="254" cy="389" rx="27" ry="22" fill="#f6cdd8" transform="rotate(14,254,389)"/><circle cx="253" cy="390" r="6" fill="#e898b5" opacity="0.65"/></g>
+            <g opacity="0.72"><ellipse cx="345" cy="380" rx="42" ry="34" fill="#f1adc2" transform="rotate(22,345,380)"/><ellipse cx="345" cy="376" rx="34" ry="27" fill="#f4c2d0" transform="rotate(-12,345,376)"/><ellipse cx="347" cy="377" rx="25" ry="20" fill="#f7d3dc" transform="rotate(7,347,377)"/><circle cx="346" cy="378" r="5" fill="#eca5be" opacity="0.6"/></g>
+          </g>
+          <text font-family="'Josefin Sans', 'Century Gothic', sans-serif" font-size="17" letter-spacing="4" fill="#3a2215" font-weight="300"><textPath href="#topArc-footer" startOffset="50%" text-anchor="middle">BISTROT &amp; GOURMANDISES</textPath></text>
+          <path d="M 108,258 C 115,242 130,240 140,253 C 150,266 142,278 136,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M 392,258 C 385,242 370,240 360,253 C 350,266 358,278 364,274" fill="none" stroke="#5c3a28" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="250" y="282" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="92" fill="#2a1208" text-anchor="middle" font-weight="700">leelou</text>
+        </svg>
       <p>9 rue Gambetta · 34200 Sète · <a href="tel:0499026993">04 99 02 69 93</a></p>
-      <p><a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
-      <p class="footer-copy">© 2025 Leelou Bistrot & Gourmandises — Tous droits réservés · <a href="atelier.html">🎨 Atelier Création</a> · <a href="mentions-legales.html">Mentions légales</a></p>
+      <a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener" class="btn-instagram btn-instagram--footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @leeloubistrot
+      </a>
+      <p class="footer-copy">© 2026 Leelou Bistrot & Gourmandises — Tous droits réservés · <a href="atelier.html">🎨 Atelier Création</a> · <a href="mentions-legales.html">Mentions légales</a></p>
     </div>
   </footer>
+
+  <!-- Bouton retour en haut -->
+  <button id="backTop" class="back-top" aria-label="Retour en haut">↑</button>
+
+  <!-- Bouton flottant appel -->
+  <a href="tel:0499026993" class="btn-float" aria-label="Appeler Leelou">
+    <span class="btn-float__icon">📞</span>
+    <span class="btn-float__text">Appeler</span>
+  </a>
+
+  <!-- Bandeau RGPD -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Consentement cookies">
+    <p>🍪 Ce site utilise Google Maps et Google Fonts. En acceptant, vous consentez au dépôt de cookies par Google. <a href="mentions-legales.html">En savoir plus</a>.</p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn-cookie btn-cookie--accept">Accepter</button>
+      <button id="cookie-refuse" class="btn-cookie btn-cookie--refuse">Refuser</button>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
