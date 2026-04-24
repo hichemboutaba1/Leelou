@@ -51,6 +51,29 @@
   });
 })();
 
+// ---------- PROCHAIN BRUNCH (dernier dimanche du mois) ----------
+(function() {
+  const el = document.getElementById('prochain-brunch-date');
+  if (!el) return;
+
+  function lastSundayOf(year, month) {
+    const lastDay = new Date(year, month + 1, 0);
+    const dayOfWeek = lastDay.getDay(); // 0 = Sunday
+    return new Date(year, month, lastDay.getDate() - dayOfWeek);
+  }
+
+  const now   = new Date();
+  let brunch  = lastSundayOf(now.getFullYear(), now.getMonth());
+  if (now > brunch) {
+    const nm = now.getMonth() === 11 ? 0 : now.getMonth() + 1;
+    const ny = now.getMonth() === 11 ? now.getFullYear() + 1 : now.getFullYear();
+    brunch   = lastSundayOf(ny, nm);
+  }
+
+  const months = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  el.textContent = 'Dimanche ' + brunch.getDate() + ' ' + months[brunch.getMonth()];
+})();
+
 // ---------- INDICATEUR OUVERT / FERMÉ ----------
 (function() {
   const now  = new Date();
@@ -173,10 +196,10 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(
-  '#apropos, #menu, #galerie, #horaires, #contact, ' +
+  '#apropos, #menu, #brunch, #galerie, #horaires, #contact, ' +
   '#ateliers, #cantine, #galerie-at, #horaires-at, #contact-at, ' +
   '.horaires-card, .menu-category, .galerie-item, .contact-item, ' +
-  '.activite-card, .cantine-at-grid'
+  '.activite-card, .cantine-at-grid, .brunch-next-badge, .brunch-menu-col'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);

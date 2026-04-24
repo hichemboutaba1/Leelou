@@ -89,6 +89,7 @@
       <ul class="nav-links">
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#menu">La Carte</a></li>
+        <li><a href="#brunch">Brunch</a></li>
         <li><a href="#galerie">Galerie</a></li>
         <li><a href="#horaires">Horaires</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -315,21 +316,51 @@
   <!-- ========== BRUNCH ========== -->
   <section id="brunch">
     <div class="container">
+
+      <div class="brunch-intro">
+        <span class="section-label">Événement mensuel</span>
+        <h2>Le Brunch de Leelou</h2>
+        <p class="brunch-subtitle">Chaque <strong>dernier dimanche du mois</strong>, de 9h à 15h — une table généreuse et gourmande dans l'esprit méditerranéen.</p>
+      </div>
+
+      <div class="brunch-next-badge">
+        <span class="brunch-next-label">Prochain brunch</span>
+        <strong id="prochain-brunch-date" class="brunch-next-date-text">—</strong>
+        <span class="brunch-next-time">9h → 15h</span>
+      </div>
+
       <div class="brunch-grid">
         <div class="brunch-image">
-          <img src="images/plat3.jpg" alt="Brunch Leelou" loading="lazy" />
+          <img src="images/plat3.jpg" alt="Brunch gourmand Leelou — pâtisseries et plats du dimanche" loading="lazy" />
         </div>
         <div class="brunch-text">
-          <span class="section-label">Le dimanche</span>
-          <h2>Le Brunch de Leelou</h2>
-          <p>Chaque dimanche de 9h à 15h, Leelou vous invite à un brunch gourmand dans une atmosphère chaleureuse. Pâtisseries maisons, œufs, viennoiseries, jus frais et café… un moment suspendu au cœur de Sète.</p>
+          <div class="brunch-menu">
+            <div class="brunch-menu-col">
+              <h4>Sucré</h4>
+              <ul>
+                <li>Viennoiseries &amp; pâtisseries maison</li>
+                <li>Pain, beurre &amp; confitures artisanales</li>
+                <li>Granola, fruits de saison</li>
+              </ul>
+            </div>
+            <div class="brunch-menu-col">
+              <h4>Salé &amp; Boissons</h4>
+              <ul>
+                <li>Œufs brouillés à la crème</li>
+                <li>Charcuterie &amp; fromages</li>
+                <li>Café, thé, chocolat, jus frais</li>
+              </ul>
+            </div>
+          </div>
           <div class="brunch-horaire">
-            <span class="brunch-day">Dimanche</span>
+            <span class="brunch-day">Dernier dim. du mois</span>
             <span class="brunch-time">9h00 — 15h00</span>
           </div>
+          <p class="brunch-instagram-note">Menu complet &amp; infos sur <a href="https://www.instagram.com/leeloubistrot" target="_blank" rel="noopener">@leeloubistrot</a></p>
           <a href="tel:0499026993" class="btn btn-brunch">Réserver · 04 99 02 69 93</a>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -389,8 +420,8 @@
         <div class="horaires-card">
           <h3>Brunch</h3>
           <ul>
-            <li><span>Dimanche</span><span>9h – 17h</span></li>
-            <li class="fermé"><span>Lundi – Samedi</span><span>Fermé</span></li>
+            <li><span>Dernier dim. du mois</span><span>9h – 15h</span></li>
+            <li class="fermé"><span>Autres dimanches</span><span>—</span></li>
           </ul>
         </div>
 
@@ -472,7 +503,7 @@
               <label for="sujet">Sujet</label>
               <select id="sujet" name="sujet">
                 <option value="reservation">Réservation</option>
-                <option value="brunch">Brunch du dimanche</option>
+                <option value="brunch">Brunch — dernier dimanche du mois</option>
                 <option value="info">Renseignement</option>
                 <option value="autre">Autre</option>
               </select>
